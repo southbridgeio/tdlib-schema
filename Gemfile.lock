@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tdlib-schema (0.1.0)
+    tdlib-schema (1.7.0)
       dry-struct (~> 1.2.0)
       dry-types (~> 1.2.0)
 

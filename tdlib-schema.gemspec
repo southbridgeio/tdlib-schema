@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "lib/tdlib/schema/version"
-
 Gem::Specification.new do |spec|
   spec.name          = "tdlib-schema"
-  spec.version       = Tdlib::Schema::VERSION
+  spec.version       = "1.7.0"
   spec.authors       = ["Southbridge"]
   spec.email         = ["ask@southbridge.io"]
 
