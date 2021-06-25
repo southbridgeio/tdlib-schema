@@ -2,7 +2,7 @@ require 'dry-struct'
 require 'dry-types'
 
 module TD::Types
-  include Dry::Types.module
+  include Dry.Types()
   
   LOOKUP_TABLE = {
       'error'                                           => 'Error',
