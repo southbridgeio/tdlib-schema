@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = "TDLib schema for tdlib-ruby gem"
   spec.homepage      = "https://github.com/southbridgeio/tdlib-schema"
   spec.license       = "MIT"
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
@@ -30,8 +30,8 @@ Gem::Specification.new do |spec|
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
 
-  spec.add_runtime_dependency 'dry-struct',       '~> 1.2.0'
-  spec.add_runtime_dependency 'dry-types',        '~> 1.2.0'
+  spec.add_runtime_dependency 'dry-struct', '~> 1.0'
+  spec.add_runtime_dependency 'dry-types', '~> 1.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 13.0'
