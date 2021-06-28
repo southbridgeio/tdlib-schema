@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr id [Integer] Unique file identifier.
   class InputFile::Id < InputFile
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
   end
 end

@@ -1,7 +1,7 @@
 module TD::Types
   # Represents a remote file.
   #
-  # @attr id [String, nil] Remote file identifier; may be empty.
+  # @attr id [TD::Types::String, nil] Remote file identifier; may be empty.
   #   Can be used by the current user across application restarts or even from other devices.
   #   Uniquely identifies a file, but a file can have a lot of different valid identifiers.
   #   If the ID starts with "http://" or "https://", it represents the HTTP URL of the file.
@@ -10,7 +10,7 @@ module TD::Types
   #   process by sending {TD::Types::Update::FileGenerationStart} to the application with the HTTP URL in the original_path
   #   and "#url#" as the conversion string.
   #   Application should generate the file by downloading it to the specified location.
-  # @attr unique_id [String, nil] Unique file identifier; may be empty if unknown.
+  # @attr unique_id [TD::Types::String, nil] Unique file identifier; may be empty if unknown.
   #   The unique file identifier which is the same for the same file even for different users and is persistent over
   #   time.
   # @attr is_uploading_active [Boolean] True, if the file is currently being uploaded (or a remote copy is being
@@ -22,6 +22,6 @@ module TD::Types
     attribute :unique_id, TD::Types::String.optional.default(nil)
     attribute :is_uploading_active, TD::Types::Bool
     attribute :is_uploading_completed, TD::Types::Bool
-    attribute :uploaded_size, TD::Types::Integer
+    attribute :uploaded_size, TD::Types::Coercible::Integer
   end
 end

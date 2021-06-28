@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr user_id [Integer] Identifier of the mentioned user.
   class TextEntityType::MentionName < TextEntityType
-    attribute :user_id, TD::Types::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
   end
 end

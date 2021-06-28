@@ -8,8 +8,8 @@ module TD::Types
   # @attr from_cache [Boolean] True, if the messages are deleted only from the cache and can possibly be retrieved
   #   again in the future.
   class Update::DeleteMessages < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
     attribute :is_permanent, TD::Types::Bool
     attribute :from_cache, TD::Types::Bool
   end

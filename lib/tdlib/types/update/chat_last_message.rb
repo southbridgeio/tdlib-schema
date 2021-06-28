@@ -7,7 +7,7 @@ module TD::Types
   # @attr last_message [TD::Types::Message, nil] The new last message in the chat; may be null.
   # @attr positions [Array<TD::Types::ChatPosition>] The new chat positions in the chat lists.
   class Update::ChatLastMessage < Update
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :last_message, TD::Types::Message.optional.default(nil)
     attribute :positions, TD::Types::Array.of(TD::Types::ChatPosition)
   end

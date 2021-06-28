@@ -8,6 +8,6 @@ module TD::Types
   #   considered to be banned forever.
   #   Always 0 in basic groups.
   class ChatMemberStatus::Banned < ChatMemberStatus
-    attribute :banned_until_date, TD::Types::Integer
+    attribute :banned_until_date, TD::Types::Coercible::Integer
   end
 end

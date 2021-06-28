@@ -7,7 +7,7 @@ module TD::Types
   # @attr default_participant_id [TD::Types::MessageSender, nil] Default group call participant identifier to join the
   #   voice chat; may be null.
   class VoiceChat < Base
-    attribute :group_call_id, TD::Types::Integer
+    attribute :group_call_id, TD::Types::Coercible::Integer
     attribute :has_participants, TD::Types::Bool
     attribute :default_participant_id, TD::Types::MessageSender.optional.default(nil)
   end

@@ -1,7 +1,7 @@
 module TD::Types
   # Represents a local file.
   #
-  # @attr path [String, nil] Local path to the locally available file part; may be empty.
+  # @attr path [TD::Types::String, nil] Local path to the locally available file part; may be empty.
   # @attr can_be_downloaded [Boolean] True, if it is possible to try to download or generate the file.
   # @attr can_be_deleted [Boolean] True, if the file can be deleted.
   # @attr is_downloading_active [Boolean] True, if the file is currently being downloaded (or a local copy is being
@@ -21,8 +21,8 @@ module TD::Types
     attribute :can_be_deleted, TD::Types::Bool
     attribute :is_downloading_active, TD::Types::Bool
     attribute :is_downloading_completed, TD::Types::Bool
-    attribute :download_offset, TD::Types::Integer
-    attribute :downloaded_prefix_size, TD::Types::Integer
-    attribute :downloaded_size, TD::Types::Integer
+    attribute :download_offset, TD::Types::Coercible::Integer
+    attribute :downloaded_prefix_size, TD::Types::Coercible::Integer
+    attribute :downloaded_size, TD::Types::Coercible::Integer
   end
 end

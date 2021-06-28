@@ -4,7 +4,7 @@ module TD::Types
   # @attr user_id [Integer] User identifier.
   # @attr status [TD::Types::UserStatus] New status of the user.
   class Update::UserStatus < Update
-    attribute :user_id, TD::Types::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
     attribute :status, TD::Types::UserStatus
   end
 end

@@ -4,8 +4,8 @@ module TD::Types
   #   members, and manage voice chats.
   # In supergroups and channels, there are more detailed options for administrator privileges.
   #
-  # @attr custom_title [String] A custom title of the administrator; 0-16 characters without emojis; applicable to
-  #   supergroups only.
+  # @attr custom_title [TD::Types::String] A custom title of the administrator; 0-16 characters without emojis;
+  #   applicable to supergroups only.
   # @attr can_be_edited [Boolean] True, if the current user can edit the administrator privileges for the called user.
   # @attr can_manage_chat [Boolean] True, if the administrator can get chat event log, get chat statistics, get message
   #   statistics in channels, get channel members, see anonymous administrators in supergroups and ignore slow mode.

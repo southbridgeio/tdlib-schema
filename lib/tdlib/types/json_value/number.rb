@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr value [Float] The value.
   class JsonValue::Number < JsonValue
-    attribute :value, TD::Types::Float
+    attribute :value, TD::Types::Coercible::Float
   end
 end

@@ -8,8 +8,8 @@ module TD::Types
   # @attr copy_options [TD::Types::MessageCopyOptions] Options to be used to copy content of the message without a link
   #   to the original message.
   class InputMessageContent::Forwarded < InputMessageContent
-    attribute :from_chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
+    attribute :from_chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
     attribute :in_game_share, TD::Types::Bool
     attribute :copy_options, TD::Types::MessageCopyOptions
   end

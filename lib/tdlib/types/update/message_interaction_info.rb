@@ -6,8 +6,8 @@ module TD::Types
   # @attr interaction_info [TD::Types::MessageInteractionInfo, nil] New information about interactions with the
   #   message; may be null.
   class Update::MessageInteractionInfo < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
     attribute :interaction_info, TD::Types::MessageInteractionInfo.optional.default(nil)
   end
 end

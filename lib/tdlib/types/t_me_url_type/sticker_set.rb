@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr sticker_set_id [Integer] Identifier of the sticker set.
   class TMeUrlType::StickerSet < TMeUrlType
-    attribute :sticker_set_id, TD::Types::Integer
+    attribute :sticker_set_id, TD::Types::Coercible::Integer
   end
 end

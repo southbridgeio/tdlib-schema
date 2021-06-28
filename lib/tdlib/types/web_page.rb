@@ -1,20 +1,20 @@
 module TD::Types
   # Describes a web page preview.
   #
-  # @attr url [String] Original URL of the link.
-  # @attr display_url [String] URL to display.
-  # @attr type [String] Type of the web page.
+  # @attr url [TD::Types::String] Original URL of the link.
+  # @attr display_url [TD::Types::String] URL to display.
+  # @attr type [TD::Types::String] Type of the web page.
   #   Can be: article, photo, audio, video, document, profile, app, or something else.
-  # @attr site_name [String] Short name of the site (e.g., Google Docs, App Store).
-  # @attr title [String] Title of the content.
+  # @attr site_name [TD::Types::String] Short name of the site (e.g., Google Docs, App Store).
+  # @attr title [TD::Types::String] Title of the content.
   # @attr description [TD::Types::FormattedText] Description of the content.
   # @attr photo [TD::Types::Photo, nil] Image representing the content; may be null.
-  # @attr embed_url [String] URL to show in the embedded preview.
-  # @attr embed_type [String] MIME type of the embedded preview, (e.g., text/html or video/mp4).
+  # @attr embed_url [TD::Types::String] URL to show in the embedded preview.
+  # @attr embed_type [TD::Types::String] MIME type of the embedded preview, (e.g., text/html or video/mp4).
   # @attr embed_width [Integer] Width of the embedded preview.
   # @attr embed_height [Integer] Height of the embedded preview.
   # @attr duration [Integer] Duration of the content, in seconds.
-  # @attr author [String] Author of the content.
+  # @attr author [TD::Types::String] Author of the content.
   # @attr animation [TD::Types::Animation, nil] Preview of the content as an animation, if available; may be null.
   # @attr audio [TD::Types::Audio, nil] Preview of the content as an audio file, if available; may be null.
   # @attr document [TD::Types::Document, nil] Preview of the content as a document, if available (currently only
@@ -36,9 +36,9 @@ module TD::Types
     attribute :photo, TD::Types::Photo.optional.default(nil)
     attribute :embed_url, TD::Types::String
     attribute :embed_type, TD::Types::String
-    attribute :embed_width, TD::Types::Integer
-    attribute :embed_height, TD::Types::Integer
-    attribute :duration, TD::Types::Integer
+    attribute :embed_width, TD::Types::Coercible::Integer
+    attribute :embed_height, TD::Types::Coercible::Integer
+    attribute :duration, TD::Types::Coercible::Integer
     attribute :author, TD::Types::String
     attribute :animation, TD::Types::Animation.optional.default(nil)
     attribute :audio, TD::Types::Audio.optional.default(nil)
@@ -47,6 +47,6 @@ module TD::Types
     attribute :video, TD::Types::Video.optional.default(nil)
     attribute :video_note, TD::Types::VideoNote.optional.default(nil)
     attribute :voice_note, TD::Types::VoiceNote.optional.default(nil)
-    attribute :instant_view_version, TD::Types::Integer
+    attribute :instant_view_version, TD::Types::Coercible::Integer
   end
 end

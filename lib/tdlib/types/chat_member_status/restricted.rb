@@ -10,7 +10,7 @@ module TD::Types
   # @attr permissions [TD::Types::ChatPermissions] User permissions in the chat.
   class ChatMemberStatus::Restricted < ChatMemberStatus
     attribute :is_member, TD::Types::Bool
-    attribute :restricted_until_date, TD::Types::Integer
+    attribute :restricted_until_date, TD::Types::Coercible::Integer
     attribute :permissions, TD::Types::ChatPermissions
   end
 end

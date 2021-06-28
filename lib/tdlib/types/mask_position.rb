@@ -10,8 +10,8 @@ module TD::Types
   #   (For example, 2.0 means a doubled size).
   class MaskPosition < Base
     attribute :point, TD::Types::MaskPoint
-    attribute :x_shift, TD::Types::Float
-    attribute :y_shift, TD::Types::Float
-    attribute :scale, TD::Types::Float
+    attribute :x_shift, TD::Types::Coercible::Float
+    attribute :y_shift, TD::Types::Coercible::Float
+    attribute :scale, TD::Types::Coercible::Float
   end
 end

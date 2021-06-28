@@ -7,7 +7,7 @@ module TD::Types
   # @attr draft_message [TD::Types::DraftMessage, nil] The new draft message; may be null.
   # @attr positions [Array<TD::Types::ChatPosition>] The new chat positions in the chat lists.
   class Update::ChatDraftMessage < Update
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :draft_message, TD::Types::DraftMessage.optional.default(nil)
     attribute :positions, TD::Types::Array.of(TD::Types::ChatPosition)
   end

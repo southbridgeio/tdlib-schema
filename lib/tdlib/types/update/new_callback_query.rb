@@ -8,11 +8,11 @@ module TD::Types
   # @attr chat_instance [Integer] Identifier that uniquely corresponds to the chat to which the message was sent.
   # @attr payload [TD::Types::CallbackQueryPayload] Query payload.
   class Update::NewCallbackQuery < Update
-    attribute :id, TD::Types::Integer
-    attribute :sender_user_id, TD::Types::Integer
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
-    attribute :chat_instance, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :sender_user_id, TD::Types::Coercible::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
+    attribute :chat_instance, TD::Types::Coercible::Integer
     attribute :payload, TD::Types::CallbackQueryPayload
   end
 end

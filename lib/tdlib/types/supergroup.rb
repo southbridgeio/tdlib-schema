@@ -6,7 +6,8 @@ module TD::Types
   # Unlike supergroups, channels can have an unlimited number of subscribers.
   #
   # @attr id [Integer] Supergroup or channel identifier.
-  # @attr username [String, nil] Username of the supergroup or channel; empty for private supergroups or channels.
+  # @attr username [TD::Types::String, nil] Username of the supergroup or channel; empty for private supergroups or
+  #   channels.
   # @attr date [Integer] Point in time (Unix timestamp) when the current user joined, or the point in time when the
   #   supergroup or channel was created, in case the user is not a member.
   # @attr status [TD::Types::ChatMemberStatus] Status of the current user in the supergroup or channel; custom title
@@ -26,16 +27,16 @@ module TD::Types
   # @attr is_broadcast_group [Boolean] True, if the supergroup is a broadcast group, i.e.
   #   only administrators can send messages and there is no limit on number of members.
   # @attr is_verified [Boolean] True, if the supergroup or channel is verified.
-  # @attr restriction_reason [String] If non-empty, contains a human-readable description of the reason why access to
-  #   this supergroup or channel must be restricted.
+  # @attr restriction_reason [TD::Types::String] If non-empty, contains a human-readable description of the reason why
+  #   access to this supergroup or channel must be restricted.
   # @attr is_scam [Boolean] True, if many users reported this supergroup or channel as a scam.
   # @attr is_fake [Boolean] True, if many users reported this supergroup or channel as a fake account.
   class Supergroup < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :username, TD::Types::String.optional.default(nil)
-    attribute :date, TD::Types::Integer
+    attribute :date, TD::Types::Coercible::Integer
     attribute :status, TD::Types::ChatMemberStatus
-    attribute :member_count, TD::Types::Integer
+    attribute :member_count, TD::Types::Coercible::Integer
     attribute :has_linked_chat, TD::Types::Bool
     attribute :has_location, TD::Types::Bool
     attribute :sign_messages, TD::Types::Bool

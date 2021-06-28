@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr verbosity_level [Integer] Log verbosity level.
   class LogVerbosityLevel < Base
-    attribute :verbosity_level, TD::Types::Integer
+    attribute :verbosity_level, TD::Types::Coercible::Integer
   end
 end

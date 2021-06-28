@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr duration [Integer] Call duration.
   class MessageContent::VoiceChatEnded < MessageContent
-    attribute :duration, TD::Types::Integer
+    attribute :duration, TD::Types::Coercible::Integer
   end
 end

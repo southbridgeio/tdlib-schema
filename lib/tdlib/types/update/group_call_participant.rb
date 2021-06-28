@@ -6,7 +6,7 @@ module TD::Types
   # @attr group_call_id [Integer] Identifier of group call.
   # @attr participant [TD::Types::GroupCallParticipant] New data about a participant.
   class Update::GroupCallParticipant < Update
-    attribute :group_call_id, TD::Types::Integer
+    attribute :group_call_id, TD::Types::Coercible::Integer
     attribute :participant, TD::Types::GroupCallParticipant
   end
 end

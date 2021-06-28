@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr progress [Integer] Upload progress, as a percentage.
   class ChatAction::UploadingPhoto < ChatAction
-    attribute :progress, TD::Types::Integer
+    attribute :progress, TD::Types::Coercible::Integer
   end
 end

@@ -8,8 +8,8 @@ module TD::Types
   # @attr thumbnail [TD::Types::Thumbnail, nil] Video thumbnail in JPEG format; as defined by the sender; may be null.
   # @attr video [TD::Types::File] File containing the video.
   class VideoNote < Base
-    attribute :duration, TD::Types::Integer
-    attribute :length, TD::Types::Integer
+    attribute :duration, TD::Types::Coercible::Integer
+    attribute :length, TD::Types::Coercible::Integer
     attribute :minithumbnail, TD::Types::Minithumbnail.optional.default(nil)
     attribute :thumbnail, TD::Types::Thumbnail.optional.default(nil)
     attribute :video, TD::Types::File

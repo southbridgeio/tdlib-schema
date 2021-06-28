@@ -1,7 +1,7 @@
 module TD::Types
   # Product invoice.
   #
-  # @attr currency [String] ISO 4217 currency code.
+  # @attr currency [TD::Types::String] ISO 4217 currency code.
   # @attr price_parts [Array<TD::Types::LabeledPricePart>] A list of objects used to calculate the total price of the
   #   product.
   # @attr max_tip_amount [Integer] The maximum allowed amount of tip in the smallest units of the currency.
@@ -17,8 +17,8 @@ module TD::Types
   class Invoice < Base
     attribute :currency, TD::Types::String
     attribute :price_parts, TD::Types::Array.of(TD::Types::LabeledPricePart)
-    attribute :max_tip_amount, TD::Types::Integer
-    attribute :suggested_tip_amounts, TD::Types::Array.of(TD::Types::Integer)
+    attribute :max_tip_amount, TD::Types::Coercible::Integer
+    attribute :suggested_tip_amounts, TD::Types::Array.of(TD::Types::Coercible::Integer)
     attribute :is_test, TD::Types::Bool
     attribute :need_name, TD::Types::Bool
     attribute :need_phone_number, TD::Types::Bool

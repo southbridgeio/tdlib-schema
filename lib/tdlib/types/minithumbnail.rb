@@ -5,8 +5,8 @@ module TD::Types
   # @attr height [Integer] Thumbnail height, usually doesn't exceed 40.
   # @attr data [String] The thumbnail in JPEG format.
   class Minithumbnail < Base
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
-    attribute :data, TD::Types::String
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
+    attribute :data, TD::Types::Coercible::String
   end
 end

@@ -8,9 +8,9 @@ module TD::Types
   # @attr caption [TD::Types::PageBlockCaption] Block caption.
   class PageBlock::Map < PageBlock
     attribute :location, TD::Types::Location
-    attribute :zoom, TD::Types::Integer
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :zoom, TD::Types::Coercible::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
     attribute :caption, TD::Types::PageBlockCaption
   end
 end

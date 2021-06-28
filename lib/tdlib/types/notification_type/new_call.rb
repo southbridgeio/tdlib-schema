@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr call_id [Integer] Call identifier.
   class NotificationType::NewCall < NotificationType
-    attribute :call_id, TD::Types::Integer
+    attribute :call_id, TD::Types::Coercible::Integer
   end
 end

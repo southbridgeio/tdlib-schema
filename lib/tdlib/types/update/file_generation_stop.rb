@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr generation_id [Integer] Unique identifier for the generation process.
   class Update::FileGenerationStop < Update
-    attribute :generation_id, TD::Types::Integer
+    attribute :generation_id, TD::Types::Coercible::Integer
   end
 end

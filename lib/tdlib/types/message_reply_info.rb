@@ -8,10 +8,10 @@ module TD::Types
   # @attr last_read_outbox_message_id [Integer] Identifier of the last read outgoing reply to the message.
   # @attr last_message_id [Integer] Identifier of the last reply to the message.
   class MessageReplyInfo < Base
-    attribute :reply_count, TD::Types::Integer
+    attribute :reply_count, TD::Types::Coercible::Integer
     attribute :recent_repliers, TD::Types::Array.of(TD::Types::MessageSender)
-    attribute :last_read_inbox_message_id, TD::Types::Integer
-    attribute :last_read_outbox_message_id, TD::Types::Integer
-    attribute :last_message_id, TD::Types::Integer
+    attribute :last_read_inbox_message_id, TD::Types::Coercible::Integer
+    attribute :last_read_outbox_message_id, TD::Types::Coercible::Integer
+    attribute :last_message_id, TD::Types::Coercible::Integer
   end
 end

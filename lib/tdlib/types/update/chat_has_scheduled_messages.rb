@@ -4,7 +4,7 @@ module TD::Types
   # @attr chat_id [Integer] Chat identifier.
   # @attr has_scheduled_messages [Boolean] New value of has_scheduled_messages.
   class Update::ChatHasScheduledMessages < Update
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :has_scheduled_messages, TD::Types::Bool
   end
 end

@@ -1,8 +1,8 @@
 module TD::Types
   # Represents a filter of user chats.
   #
-  # @attr title [String] The title of the filter; 1-12 characters without line feeds.
-  # @attr icon_name [String, nil] The icon name for short filter representation.
+  # @attr title [TD::Types::String] The title of the filter; 1-12 characters without line feeds.
+  # @attr icon_name [TD::Types::String, nil] The icon name for short filter representation.
   #   If non-empty, must be one of "All", "Unread", "Unmuted", "Bots", "Channels", "Groups", "Private", "Custom",
   #   "Setup", "Cat", "Crown", "Favorite", "Flower", "Game", "Home", "Love", "Mask", "Party", "Sport", "Study", "Trade",
   #   "Travel", "Work".
@@ -21,9 +21,9 @@ module TD::Types
   class ChatFilter < Base
     attribute :title, TD::Types::String
     attribute :icon_name, TD::Types::String.optional.default(nil)
-    attribute :pinned_chat_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :included_chat_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :excluded_chat_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :pinned_chat_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :included_chat_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :excluded_chat_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
     attribute :exclude_muted, TD::Types::Bool
     attribute :exclude_read, TD::Types::Bool
     attribute :exclude_archived, TD::Types::Bool

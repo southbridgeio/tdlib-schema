@@ -7,10 +7,10 @@ module TD::Types
   # @attr total_count [Integer] Total number of active notifications in the group.
   # @attr notifications [Array<TD::Types::Notification>] The list of active notifications.
   class NotificationGroup < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :type, TD::Types::NotificationGroupType
-    attribute :chat_id, TD::Types::Integer
-    attribute :total_count, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :total_count, TD::Types::Coercible::Integer
     attribute :notifications, TD::Types::Array.of(TD::Types::Notification)
   end
 end

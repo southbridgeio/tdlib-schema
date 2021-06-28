@@ -5,7 +5,7 @@ module TD::Types
   # @attr chat_id [Integer] Identifier of the chat with the live location message.
   # @attr message_id [Integer] Identifier of the message with live location.
   class Update::MessageLiveLocationViewed < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
   end
 end

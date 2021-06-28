@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr retry_after [Integer] Time left before the session can be used to transfer ownership of a chat, in seconds.
   class CanTransferOwnershipResult::SessionTooFresh < CanTransferOwnershipResult
-    attribute :retry_after, TD::Types::Integer
+    attribute :retry_after, TD::Types::Coercible::Integer
   end
 end

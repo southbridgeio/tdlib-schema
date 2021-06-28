@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr file_hash [String] Current hash of the file which has the error.
   class InputPassportElementErrorSource::File < InputPassportElementErrorSource
-    attribute :file_hash, TD::Types::String
+    attribute :file_hash, TD::Types::Coercible::String
   end
 end

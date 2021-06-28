@@ -5,6 +5,6 @@ module TD::Types
   # @attr publish_date [Integer] Point in time (Unix timestamp) when the article was published; 0 if unknown.
   class PageBlock::AuthorDate < PageBlock
     attribute :author, TD::Types::RichText
-    attribute :publish_date, TD::Types::Integer
+    attribute :publish_date, TD::Types::Coercible::Integer
   end
 end

@@ -1,7 +1,7 @@
 module TD::Types
   # An identity document to be saved to Telegram Passport.
   #
-  # @attr number [String] Document number; 1-24 characters.
+  # @attr number [TD::Types::String] Document number; 1-24 characters.
   # @attr expiry_date [TD::Types::Date, nil] Document expiry date, if available.
   # @attr front_side [TD::Types::InputFile] Front side of the document.
   # @attr reverse_side [TD::Types::InputFile] Reverse side of the document; only for driver license and identity card.

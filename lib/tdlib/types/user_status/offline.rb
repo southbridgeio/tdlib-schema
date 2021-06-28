@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr was_online [Integer] Point in time (Unix timestamp) when the user was last online.
   class UserStatus::Offline < UserStatus
-    attribute :was_online, TD::Types::Integer
+    attribute :was_online, TD::Types::Coercible::Integer
   end
 end

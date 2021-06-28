@@ -4,7 +4,7 @@ module TD::Types
   # @attr old_slow_mode_delay [Integer] Previous value of slow_mode_delay.
   # @attr new_slow_mode_delay [Integer] New value of slow_mode_delay.
   class ChatEventAction::SlowModeDelayChanged < ChatEventAction
-    attribute :old_slow_mode_delay, TD::Types::Integer
-    attribute :new_slow_mode_delay, TD::Types::Integer
+    attribute :old_slow_mode_delay, TD::Types::Coercible::Integer
+    attribute :new_slow_mode_delay, TD::Types::Coercible::Integer
   end
 end

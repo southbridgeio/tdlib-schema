@@ -5,8 +5,8 @@ module TD::Types
   # @attr count [Integer] Total number of files.
   # @attr by_chat [Array<TD::Types::StorageStatisticsByChat>] Statistics split by chats.
   class StorageStatistics < Base
-    attribute :size, TD::Types::Integer
-    attribute :count, TD::Types::Integer
+    attribute :size, TD::Types::Coercible::Integer
+    attribute :count, TD::Types::Coercible::Integer
     attribute :by_chat, TD::Types::Array.of(TD::Types::StorageStatisticsByChat)
   end
 end

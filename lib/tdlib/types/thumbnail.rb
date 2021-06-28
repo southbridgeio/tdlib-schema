@@ -7,8 +7,8 @@ module TD::Types
   # @attr file [TD::Types::File] The thumbnail.
   class Thumbnail < Base
     attribute :format, TD::Types::ThumbnailFormat
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
     attribute :file, TD::Types::File
   end
 end

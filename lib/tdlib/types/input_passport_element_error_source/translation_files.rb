@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr file_hashes [Array<String>] Current hashes of all files with the translation.
   class InputPassportElementErrorSource::TranslationFiles < InputPassportElementErrorSource
-    attribute :file_hashes, TD::Types::Array.of(TD::Types::String)
+    attribute :file_hashes, TD::Types::Array.of(TD::Types::Coercible::String)
   end
 end

@@ -4,6 +4,6 @@ module TD::Types
   # @attr send_date [Integer] Date the message will be sent.
   #   The date must be within 367 days in the future.
   class MessageSchedulingState::SendAtDate < MessageSchedulingState
-    attribute :send_date, TD::Types::Integer
+    attribute :send_date, TD::Types::Coercible::Integer
   end
 end

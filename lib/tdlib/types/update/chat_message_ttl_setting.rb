@@ -4,7 +4,7 @@ module TD::Types
   # @attr chat_id [Integer] Chat identifier.
   # @attr message_ttl_setting [Integer] New value of message_ttl_setting.
   class Update::ChatMessageTtlSetting < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_ttl_setting, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_ttl_setting, TD::Types::Coercible::Integer
   end
 end

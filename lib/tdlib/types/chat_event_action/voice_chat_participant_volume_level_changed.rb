@@ -5,6 +5,6 @@ module TD::Types
   # @attr volume_level [Integer] New value of volume_level; 1-20000 in hundreds of percents.
   class ChatEventAction::VoiceChatParticipantVolumeLevelChanged < ChatEventAction
     attribute :participant_id, TD::Types::MessageSender
-    attribute :volume_level, TD::Types::Integer
+    attribute :volume_level, TD::Types::Coercible::Integer
   end
 end

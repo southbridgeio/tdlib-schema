@@ -2,7 +2,7 @@ module TD::Types
   # Describes a group call.
   #
   # @attr id [Integer] Group call identifier.
-  # @attr title [String] Group call title.
+  # @attr title [TD::Types::String] Group call title.
   # @attr scheduled_start_date [Integer] Point in time (Unix timestamp) when the group call is supposed to be started
   #   by an administrator; 0 if it is already active or was ended.
   # @attr enabled_start_notification [Boolean] True, if the group call is scheduled and the current user will receive a
@@ -23,20 +23,20 @@ module TD::Types
   #   recording goes on.
   # @attr duration [Integer] Call duration; for ended calls only.
   class GroupCall < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :title, TD::Types::String
-    attribute :scheduled_start_date, TD::Types::Integer
+    attribute :scheduled_start_date, TD::Types::Coercible::Integer
     attribute :enabled_start_notification, TD::Types::Bool
     attribute :is_active, TD::Types::Bool
     attribute :is_joined, TD::Types::Bool
     attribute :need_rejoin, TD::Types::Bool
     attribute :can_be_managed, TD::Types::Bool
-    attribute :participant_count, TD::Types::Integer
+    attribute :participant_count, TD::Types::Coercible::Integer
     attribute :loaded_all_participants, TD::Types::Bool
     attribute :recent_speakers, TD::Types::Array.of(TD::Types::GroupCallRecentSpeaker)
     attribute :mute_new_participants, TD::Types::Bool
     attribute :can_change_mute_new_participants, TD::Types::Bool
-    attribute :record_duration, TD::Types::Integer
-    attribute :duration, TD::Types::Integer
+    attribute :record_duration, TD::Types::Coercible::Integer
+    attribute :duration, TD::Types::Coercible::Integer
   end
 end

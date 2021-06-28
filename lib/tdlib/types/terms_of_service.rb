@@ -6,7 +6,7 @@ module TD::Types
   # @attr show_popup [Boolean] True, if a blocking popup with terms of service must be shown to the user.
   class TermsOfService < Base
     attribute :text, TD::Types::FormattedText
-    attribute :min_user_age, TD::Types::Integer
+    attribute :min_user_age, TD::Types::Coercible::Integer
     attribute :show_popup, TD::Types::Bool
   end
 end

@@ -10,7 +10,7 @@ module TD::Types
   #   Use 0 if unknown.
   class InputThumbnail < Base
     attribute :thumbnail, TD::Types::InputFile
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
   end
 end

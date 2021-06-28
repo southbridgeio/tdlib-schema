@@ -9,9 +9,9 @@ module TD::Types
   # @attr local [TD::Types::LocalFile] Information about the local copy of the file.
   # @attr remote [TD::Types::RemoteFile] Information about the remote copy of the file.
   class File < Base
-    attribute :id, TD::Types::Integer
-    attribute :size, TD::Types::Integer
-    attribute :expected_size, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :size, TD::Types::Coercible::Integer
+    attribute :expected_size, TD::Types::Coercible::Integer
     attribute :local, TD::Types::LocalFile
     attribute :remote, TD::Types::RemoteFile
   end

@@ -14,13 +14,13 @@ module TD::Types
   # @attr removed_notification_ids [Array<Integer>] Identifiers of removed group notifications, sorted by notification
   #   ID.
   class Update::NotificationGroup < Update
-    attribute :notification_group_id, TD::Types::Integer
+    attribute :notification_group_id, TD::Types::Coercible::Integer
     attribute :type, TD::Types::NotificationGroupType
-    attribute :chat_id, TD::Types::Integer
-    attribute :notification_settings_chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :notification_settings_chat_id, TD::Types::Coercible::Integer
     attribute :is_silent, TD::Types::Bool
-    attribute :total_count, TD::Types::Integer
+    attribute :total_count, TD::Types::Coercible::Integer
     attribute :added_notifications, TD::Types::Array.of(TD::Types::Notification)
-    attribute :removed_notification_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :removed_notification_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

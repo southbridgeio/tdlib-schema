@@ -5,8 +5,8 @@ module TD::Types
   # @attr user_id [Integer] The user, who changed the answer to the poll.
   # @attr option_ids [Array<Integer>] 0-based identifiers of answer options, chosen by the user.
   class Update::PollAnswer < Update
-    attribute :poll_id, TD::Types::Integer
-    attribute :user_id, TD::Types::Integer
-    attribute :option_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :poll_id, TD::Types::Coercible::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
+    attribute :option_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

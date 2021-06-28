@@ -5,8 +5,8 @@ module TD::Types
   # @attr view_count [Integer] Number of times the message was viewed.
   # @attr forward_count [Integer] Number of times the message was forwarded.
   class ChatStatisticsMessageInteractionInfo < Base
-    attribute :message_id, TD::Types::Integer
-    attribute :view_count, TD::Types::Integer
-    attribute :forward_count, TD::Types::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
+    attribute :view_count, TD::Types::Coercible::Integer
+    attribute :forward_count, TD::Types::Coercible::Integer
   end
 end

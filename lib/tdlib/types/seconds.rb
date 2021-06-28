@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr seconds [Float] Number of seconds.
   class Seconds < Base
-    attribute :seconds, TD::Types::Float
+    attribute :seconds, TD::Types::Coercible::Float
   end
 end

@@ -3,7 +3,7 @@ module TD::Types
   #
   # @attr sticker [TD::Types::InputFile] PNG image with the sticker; must be up to 512 KB in size and fit in a 512x512
   #   square.
-  # @attr emojis [String] Emojis corresponding to the sticker.
+  # @attr emojis [TD::Types::String] Emojis corresponding to the sticker.
   # @attr mask_position [TD::Types::MaskPosition, nil] For masks, position where the mask should be placed; may be
   #   null.
   class InputSticker::Static < InputSticker

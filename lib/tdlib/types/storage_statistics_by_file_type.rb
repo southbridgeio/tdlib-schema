@@ -6,7 +6,7 @@ module TD::Types
   # @attr count [Integer] Total number of files.
   class StorageStatisticsByFileType < Base
     attribute :file_type, TD::Types::FileType
-    attribute :size, TD::Types::Integer
-    attribute :count, TD::Types::Integer
+    attribute :size, TD::Types::Coercible::Integer
+    attribute :count, TD::Types::Coercible::Integer
   end
 end

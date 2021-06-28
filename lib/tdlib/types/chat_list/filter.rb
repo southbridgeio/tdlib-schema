@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr chat_filter_id [Integer] Chat filter identifier.
   class ChatList::Filter < ChatList
-    attribute :chat_filter_id, TD::Types::Integer
+    attribute :chat_filter_id, TD::Types::Coercible::Integer
   end
 end

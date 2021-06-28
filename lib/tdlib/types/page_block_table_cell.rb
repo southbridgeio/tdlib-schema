@@ -11,8 +11,8 @@ module TD::Types
   class PageBlockTableCell < Base
     attribute :text, TD::Types::RichText.optional.default(nil)
     attribute :is_header, TD::Types::Bool
-    attribute :colspan, TD::Types::Integer
-    attribute :rowspan, TD::Types::Integer
+    attribute :colspan, TD::Types::Coercible::Integer
+    attribute :rowspan, TD::Types::Coercible::Integer
     attribute :align, TD::Types::PageBlockHorizontalAlignment
     attribute :valign, TD::Types::PageBlockVerticalAlignment
   end

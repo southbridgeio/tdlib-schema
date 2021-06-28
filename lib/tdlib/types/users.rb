@@ -4,7 +4,7 @@ module TD::Types
   # @attr total_count [Integer] Approximate total count of users found.
   # @attr user_ids [Array<Integer>] A list of user identifiers.
   class Users < Base
-    attribute :total_count, TD::Types::Integer
-    attribute :user_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :total_count, TD::Types::Coercible::Integer
+    attribute :user_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

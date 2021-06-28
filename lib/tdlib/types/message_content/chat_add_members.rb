@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr member_user_ids [Array<Integer>] User identifiers of the new members.
   class MessageContent::ChatAddMembers < MessageContent
-    attribute :member_user_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :member_user_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

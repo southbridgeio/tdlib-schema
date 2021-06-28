@@ -6,9 +6,9 @@ module TD::Types
   # @attr user_id [Integer] Identifier of the user who performed the action that triggered the event.
   # @attr action [TD::Types::ChatEventAction] Action performed by the user.
   class ChatEvent < Base
-    attribute :id, TD::Types::Integer
-    attribute :date, TD::Types::Integer
-    attribute :user_id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :date, TD::Types::Coercible::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
     attribute :action, TD::Types::ChatEventAction
   end
 end

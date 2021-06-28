@@ -6,7 +6,7 @@ module TD::Types
   # @attr importer_count [Array<Integer>] The number of users that imported the corresponding contact; 0 for already
   #   registered users or if unavailable.
   class ImportedContacts < Base
-    attribute :user_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :importer_count, TD::Types::Array.of(TD::Types::Integer)
+    attribute :user_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :importer_count, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

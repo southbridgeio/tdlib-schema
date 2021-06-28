@@ -5,8 +5,8 @@ module TD::Types
   # @attr message_id [Integer] Message identifier.
   # @attr new_content [TD::Types::MessageContent] New message content.
   class Update::MessageContent < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
     attribute :new_content, TD::Types::MessageContent
   end
 end

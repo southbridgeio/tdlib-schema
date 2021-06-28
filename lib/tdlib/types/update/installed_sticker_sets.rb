@@ -5,6 +5,6 @@ module TD::Types
   # @attr sticker_set_ids [Array<Integer>] The new list of installed ordinary sticker sets.
   class Update::InstalledStickerSets < Update
     attribute :is_masks, TD::Types::Bool
-    attribute :sticker_set_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :sticker_set_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

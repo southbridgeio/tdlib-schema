@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr chat_ids [Array<Integer>] The chat identifiers, total number of chats in all rules must not exceed 20.
   class UserPrivacySettingRule::AllowChatMembers < UserPrivacySettingRule
-    attribute :chat_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :chat_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

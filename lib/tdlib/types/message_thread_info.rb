@@ -8,8 +8,8 @@ module TD::Types
   #   The messages are returned in a reverse chronological order (i.e., in order of decreasing message_id).
   # @attr draft_message [TD::Types::DraftMessage, nil] A draft of a message in the message thread; may be null.
   class MessageThreadInfo < Base
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_thread_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_thread_id, TD::Types::Coercible::Integer
     attribute :reply_info, TD::Types::MessageReplyInfo
     attribute :messages, TD::Types::Array.of(TD::Types::Message)
     attribute :draft_message, TD::Types::DraftMessage.optional.default(nil)

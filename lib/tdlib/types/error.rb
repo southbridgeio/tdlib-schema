@@ -4,9 +4,9 @@ module TD::Types
   # @attr code [Integer] Error code; subject to future changes.
   #   If the error code is 406, the error message must not be processed in any way and must not be displayed to the
   #   user.
-  # @attr message [String] Error message; subject to future changes.
+  # @attr message [TD::Types::String] Error message; subject to future changes.
   class Error < Base
-    attribute :code, TD::Types::Integer
+    attribute :code, TD::Types::Coercible::Integer
     attribute :message, TD::Types::String
   end
 end

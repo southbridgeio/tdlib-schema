@@ -8,8 +8,8 @@ module TD::Types
   # @attr duration [Float] Total call duration, in seconds.
   class NetworkStatisticsEntry::Call < NetworkStatisticsEntry
     attribute :network_type, TD::Types::NetworkType
-    attribute :sent_bytes, TD::Types::Integer
-    attribute :received_bytes, TD::Types::Integer
-    attribute :duration, TD::Types::Float
+    attribute :sent_bytes, TD::Types::Coercible::Integer
+    attribute :received_bytes, TD::Types::Coercible::Integer
+    attribute :duration, TD::Types::Coercible::Float
   end
 end

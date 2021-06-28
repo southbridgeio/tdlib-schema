@@ -2,13 +2,13 @@ module TD::Types
   # Represents a link to an animated GIF or an animated (i.e.
   # without sound) H.264/MPEG-4 AVC video.
   #
-  # @attr id [String] Unique identifier of the query result.
-  # @attr title [String] Title of the query result.
-  # @attr thumbnail_url [String] URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists.
-  # @attr thumbnail_mime_type [String] MIME type of the video thumbnail.
+  # @attr id [TD::Types::String] Unique identifier of the query result.
+  # @attr title [TD::Types::String] Title of the query result.
+  # @attr thumbnail_url [TD::Types::String] URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists.
+  # @attr thumbnail_mime_type [TD::Types::String] MIME type of the video thumbnail.
   #   If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4".
-  # @attr video_url [String] The URL of the video file (file size must not exceed 1MB).
-  # @attr video_mime_type [String] MIME type of the video file.
+  # @attr video_url [TD::Types::String] The URL of the video file (file size must not exceed 1MB).
+  # @attr video_mime_type [TD::Types::String] MIME type of the video file.
   #   Must be one of "image/gif" and "video/mp4".
   # @attr video_duration [Integer] Duration of the video, in seconds.
   # @attr video_width [Integer] Width of the video.
@@ -25,9 +25,9 @@ module TD::Types
     attribute :thumbnail_mime_type, TD::Types::String
     attribute :video_url, TD::Types::String
     attribute :video_mime_type, TD::Types::String
-    attribute :video_duration, TD::Types::Integer
-    attribute :video_width, TD::Types::Integer
-    attribute :video_height, TD::Types::Integer
+    attribute :video_duration, TD::Types::Coercible::Integer
+    attribute :video_width, TD::Types::Coercible::Integer
+    attribute :video_height, TD::Types::Coercible::Integer
     attribute :reply_markup, TD::Types::ReplyMarkup
     attribute :input_message_content, TD::Types::InputMessageContent
   end

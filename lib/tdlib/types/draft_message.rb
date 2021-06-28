@@ -6,8 +6,8 @@ module TD::Types
   # @attr input_message_text [TD::Types::InputMessageContent] Content of the message draft; this should always be of
   #   type inputMessageText.
   class DraftMessage < Base
-    attribute :reply_to_message_id, TD::Types::Integer
-    attribute :date, TD::Types::Integer
+    attribute :reply_to_message_id, TD::Types::Coercible::Integer
+    attribute :date, TD::Types::Coercible::Integer
     attribute :input_message_text, TD::Types::InputMessageContent
   end
 end

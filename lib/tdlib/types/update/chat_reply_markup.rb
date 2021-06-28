@@ -7,7 +7,7 @@ module TD::Types
   # @attr reply_markup_message_id [Integer] Identifier of the message from which reply markup needs to be used; 0 if
   #   there is no default custom reply markup in the chat.
   class Update::ChatReplyMarkup < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :reply_markup_message_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :reply_markup_message_id, TD::Types::Coercible::Integer
   end
 end

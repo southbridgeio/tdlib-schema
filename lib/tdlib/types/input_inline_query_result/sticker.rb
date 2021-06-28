@@ -1,9 +1,9 @@
 module TD::Types
   # Represents a link to a WEBP or TGS sticker.
   #
-  # @attr id [String] Unique identifier of the query result.
-  # @attr thumbnail_url [String] URL of the sticker thumbnail, if it exists.
-  # @attr sticker_url [String] The URL of the WEBP or TGS sticker (sticker file size must not exceed 5MB).
+  # @attr id [TD::Types::String] Unique identifier of the query result.
+  # @attr thumbnail_url [TD::Types::String] URL of the sticker thumbnail, if it exists.
+  # @attr sticker_url [TD::Types::String] The URL of the WEBP or TGS sticker (sticker file size must not exceed 5MB).
   # @attr sticker_width [Integer] Width of the sticker.
   # @attr sticker_height [Integer] Height of the sticker.
   # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup.
@@ -15,8 +15,8 @@ module TD::Types
     attribute :id, TD::Types::String
     attribute :thumbnail_url, TD::Types::String
     attribute :sticker_url, TD::Types::String
-    attribute :sticker_width, TD::Types::Integer
-    attribute :sticker_height, TD::Types::Integer
+    attribute :sticker_width, TD::Types::Coercible::Integer
+    attribute :sticker_height, TD::Types::Coercible::Integer
     attribute :reply_markup, TD::Types::ReplyMarkup
     attribute :input_message_content, TD::Types::InputMessageContent
   end

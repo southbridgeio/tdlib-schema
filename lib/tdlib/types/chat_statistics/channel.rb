@@ -27,7 +27,7 @@ module TD::Types
     attribute :member_count, TD::Types::StatisticalValue
     attribute :mean_view_count, TD::Types::StatisticalValue
     attribute :mean_share_count, TD::Types::StatisticalValue
-    attribute :enabled_notifications_percentage, TD::Types::Float
+    attribute :enabled_notifications_percentage, TD::Types::Coercible::Float
     attribute :member_count_graph, TD::Types::StatisticalGraph
     attribute :join_graph, TD::Types::StatisticalGraph
     attribute :mute_graph, TD::Types::StatisticalGraph

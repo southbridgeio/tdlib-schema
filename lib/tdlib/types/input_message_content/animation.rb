@@ -12,10 +12,10 @@ module TD::Types
   class InputMessageContent::Animation < InputMessageContent
     attribute :animation, TD::Types::InputFile
     attribute :thumbnail, TD::Types::InputThumbnail.optional.default(nil)
-    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :duration, TD::Types::Integer
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :duration, TD::Types::Coercible::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
     attribute :caption, TD::Types::FormattedText
   end
 end

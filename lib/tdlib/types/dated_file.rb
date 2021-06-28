@@ -5,6 +5,6 @@ module TD::Types
   # @attr date [Integer] Point in time (Unix timestamp) when the file was uploaded.
   class DatedFile < Base
     attribute :file, TD::Types::File
-    attribute :date, TD::Types::Integer
+    attribute :date, TD::Types::Coercible::Integer
   end
 end

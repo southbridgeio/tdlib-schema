@@ -8,7 +8,7 @@ module TD::Types
   # @attr for_comment [Boolean] True, if the message is linked as a channel post comment or from a message thread.
   class MessageLinkInfo < Base
     attribute :is_public, TD::Types::Bool
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :message, TD::Types::Message.optional.default(nil)
     attribute :for_album, TD::Types::Bool
     attribute :for_comment, TD::Types::Bool

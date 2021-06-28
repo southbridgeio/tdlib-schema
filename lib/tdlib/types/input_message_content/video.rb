@@ -14,12 +14,12 @@ module TD::Types
   class InputMessageContent::Video < InputMessageContent
     attribute :video, TD::Types::InputFile
     attribute :thumbnail, TD::Types::InputThumbnail.optional.default(nil)
-    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :duration, TD::Types::Integer
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :duration, TD::Types::Coercible::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
     attribute :supports_streaming, TD::Types::Bool
     attribute :caption, TD::Types::FormattedText
-    attribute :ttl, TD::Types::Integer
+    attribute :ttl, TD::Types::Coercible::Integer
   end
 end

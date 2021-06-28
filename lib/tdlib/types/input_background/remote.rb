@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr background_id [Integer] The background identifier.
   class InputBackground::Remote < InputBackground
-    attribute :background_id, TD::Types::Integer
+    attribute :background_id, TD::Types::Coercible::Integer
   end
 end

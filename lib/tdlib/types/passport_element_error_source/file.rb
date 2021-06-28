@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr file_index [Integer] Index of a file with the error.
   class PassportElementErrorSource::File < PassportElementErrorSource
-    attribute :file_index, TD::Types::Integer
+    attribute :file_index, TD::Types::Coercible::Integer
   end
 end

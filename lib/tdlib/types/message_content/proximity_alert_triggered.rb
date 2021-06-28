@@ -7,6 +7,6 @@ module TD::Types
   class MessageContent::ProximityAlertTriggered < MessageContent
     attribute :traveler, TD::Types::MessageSender
     attribute :watcher, TD::Types::MessageSender
-    attribute :distance, TD::Types::Integer
+    attribute :distance, TD::Types::Coercible::Integer
   end
 end

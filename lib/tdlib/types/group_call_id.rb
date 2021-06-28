@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr id [Integer] Group call identifier.
   class GroupCallId < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
   end
 end

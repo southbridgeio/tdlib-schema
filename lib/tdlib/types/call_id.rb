@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr id [Integer] Call identifier.
   class CallId < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
   end
 end

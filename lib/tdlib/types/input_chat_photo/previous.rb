@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr chat_photo_id [Integer] Identifier of the current user's profile photo to reuse.
   class InputChatPhoto::Previous < InputChatPhoto
-    attribute :chat_photo_id, TD::Types::Integer
+    attribute :chat_photo_id, TD::Types::Coercible::Integer
   end
 end

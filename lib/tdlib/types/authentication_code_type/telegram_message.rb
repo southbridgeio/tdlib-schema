@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr length [Integer] Length of the code.
   class AuthenticationCodeType::TelegramMessage < AuthenticationCodeType
-    attribute :length, TD::Types::Integer
+    attribute :length, TD::Types::Coercible::Integer
   end
 end

@@ -7,8 +7,8 @@ module TD::Types
   #   sender.
   #   0 if unknown.
   class Location < Base
-    attribute :latitude, TD::Types::Float
-    attribute :longitude, TD::Types::Float
-    attribute :horizontal_accuracy, TD::Types::Float
+    attribute :latitude, TD::Types::Coercible::Float
+    attribute :longitude, TD::Types::Coercible::Float
+    attribute :horizontal_accuracy, TD::Types::Coercible::Float
   end
 end

@@ -15,11 +15,11 @@ module TD::Types
   #   Video notes are supported if the layer >= 66; nested text entities and underline and strikethrough entities are
   #   supported if the layer >= 101.
   class SecretChat < Base
-    attribute :id, TD::Types::Integer
-    attribute :user_id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
     attribute :state, TD::Types::SecretChatState
     attribute :is_outbound, TD::Types::Bool
-    attribute :key_hash, TD::Types::String
-    attribute :layer, TD::Types::Integer
+    attribute :key_hash, TD::Types::Coercible::String
+    attribute :layer, TD::Types::Coercible::Integer
   end
 end

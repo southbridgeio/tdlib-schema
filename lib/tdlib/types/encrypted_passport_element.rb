@@ -9,11 +9,11 @@ module TD::Types
   # @attr translation [Array<TD::Types::DatedFile>] List of files containing a certified English translation of the
   #   document.
   # @attr files [Array<TD::Types::DatedFile>] List of attached files.
-  # @attr value [String] Unencrypted data, phone number or email address.
-  # @attr hash [String] Hash of the entire element.
+  # @attr value [TD::Types::String] Unencrypted data, phone number or email address.
+  # @attr hash [TD::Types::String] Hash of the entire element.
   class EncryptedPassportElement < Base
     attribute :type, TD::Types::PassportElementType
-    attribute :data, TD::Types::String
+    attribute :data, TD::Types::Coercible::String
     attribute :front_side, TD::Types::DatedFile
     attribute :reverse_side, TD::Types::DatedFile.optional.default(nil)
     attribute :selfie, TD::Types::DatedFile.optional.default(nil)

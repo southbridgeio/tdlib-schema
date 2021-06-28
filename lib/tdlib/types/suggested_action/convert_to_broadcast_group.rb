@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr supergroup_id [Integer] Supergroup identifier.
   class SuggestedAction::ConvertToBroadcastGroup < SuggestedAction
-    attribute :supergroup_id, TD::Types::Integer
+    attribute :supergroup_id, TD::Types::Coercible::Integer
   end
 end

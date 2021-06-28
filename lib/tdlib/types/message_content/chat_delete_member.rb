@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr user_id [Integer] User identifier of the deleted chat member.
   class MessageContent::ChatDeleteMember < MessageContent
-    attribute :user_id, TD::Types::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
   end
 end

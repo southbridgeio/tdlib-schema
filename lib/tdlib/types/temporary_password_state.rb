@@ -5,6 +5,6 @@ module TD::Types
   # @attr valid_for [Integer] Time left before the temporary password expires, in seconds.
   class TemporaryPasswordState < Base
     attribute :has_password, TD::Types::Bool
-    attribute :valid_for, TD::Types::Integer
+    attribute :valid_for, TD::Types::Coercible::Integer
   end
 end

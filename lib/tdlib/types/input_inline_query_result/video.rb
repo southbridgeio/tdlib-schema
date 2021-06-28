@@ -1,13 +1,13 @@
 module TD::Types
   # Represents a link to a page containing an embedded video player or a video file.
   #
-  # @attr id [String] Unique identifier of the query result.
-  # @attr title [String] Title of the result.
-  # @attr description [String] A short description of the result, if known.
-  # @attr thumbnail_url [String] The URL of the video thumbnail (JPEG), if it exists.
-  # @attr video_url [String] URL of the embedded video player or video file.
-  # @attr mime_type [String] MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently
-  #   supported.
+  # @attr id [TD::Types::String] Unique identifier of the query result.
+  # @attr title [TD::Types::String] Title of the result.
+  # @attr description [TD::Types::String] A short description of the result, if known.
+  # @attr thumbnail_url [TD::Types::String] The URL of the video thumbnail (JPEG), if it exists.
+  # @attr video_url [TD::Types::String] URL of the embedded video player or video file.
+  # @attr mime_type [TD::Types::String] MIME type of the content of the video URL, only "text/html" or "video/mp4" are
+  #   currently supported.
   # @attr video_width [Integer] Width of the video.
   # @attr video_height [Integer] Height of the video.
   # @attr video_duration [Integer] Video duration, in seconds.
@@ -23,9 +23,9 @@ module TD::Types
     attribute :thumbnail_url, TD::Types::String
     attribute :video_url, TD::Types::String
     attribute :mime_type, TD::Types::String
-    attribute :video_width, TD::Types::Integer
-    attribute :video_height, TD::Types::Integer
-    attribute :video_duration, TD::Types::Integer
+    attribute :video_width, TD::Types::Coercible::Integer
+    attribute :video_height, TD::Types::Coercible::Integer
+    attribute :video_duration, TD::Types::Coercible::Integer
     attribute :reply_markup, TD::Types::ReplyMarkup
     attribute :input_message_content, TD::Types::InputMessageContent
   end

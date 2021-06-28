@@ -9,9 +9,9 @@ module TD::Types
   # @attr old_chat_member [TD::Types::ChatMember] Previous chat member.
   # @attr new_chat_member [TD::Types::ChatMember] New chat member.
   class Update::ChatMember < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :actor_user_id, TD::Types::Integer
-    attribute :date, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :actor_user_id, TD::Types::Coercible::Integer
+    attribute :date, TD::Types::Coercible::Integer
     attribute :invite_link, TD::Types::ChatInviteLink.optional.default(nil)
     attribute :old_chat_member, TD::Types::ChatMember
     attribute :new_chat_member, TD::Types::ChatMember

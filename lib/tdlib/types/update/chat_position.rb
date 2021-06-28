@@ -6,7 +6,7 @@ module TD::Types
   # @attr position [TD::Types::ChatPosition] New chat position.
   #   If new order is 0, then the chat needs to be removed from the list.
   class Update::ChatPosition < Update
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :position, TD::Types::ChatPosition
   end
 end

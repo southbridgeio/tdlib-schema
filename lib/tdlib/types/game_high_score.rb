@@ -5,8 +5,8 @@ module TD::Types
   # @attr user_id [Integer] User identifier.
   # @attr score [Integer] User score.
   class GameHighScore < Base
-    attribute :position, TD::Types::Integer
-    attribute :user_id, TD::Types::Integer
-    attribute :score, TD::Types::Integer
+    attribute :position, TD::Types::Coercible::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
+    attribute :score, TD::Types::Coercible::Integer
   end
 end

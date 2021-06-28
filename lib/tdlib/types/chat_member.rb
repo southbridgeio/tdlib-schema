@@ -13,8 +13,8 @@ module TD::Types
   #   Can be null even for a bot if the bot is not the chat member.
   class ChatMember < Base
     attribute :member_id, TD::Types::MessageSender
-    attribute :inviter_user_id, TD::Types::Integer
-    attribute :joined_chat_date, TD::Types::Integer
+    attribute :inviter_user_id, TD::Types::Coercible::Integer
+    attribute :joined_chat_date, TD::Types::Coercible::Integer
     attribute :status, TD::Types::ChatMemberStatus
     attribute :bot_info, TD::Types::BotInfo.optional.default(nil)
   end

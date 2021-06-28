@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr element_hash [String] Current hash of the entire element.
   class InputPassportElementErrorSource::Unspecified < InputPassportElementErrorSource
-    attribute :element_hash, TD::Types::String
+    attribute :element_hash, TD::Types::Coercible::String
   end
 end

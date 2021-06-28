@@ -6,8 +6,8 @@ module TD::Types
   # @attr rotation_angle [Integer] Clockwise rotation angle of the gradient, in degrees; 0-359.
   #   Should be always divisible by 45.
   class BackgroundFill::Gradient < BackgroundFill
-    attribute :top_color, TD::Types::Integer
-    attribute :bottom_color, TD::Types::Integer
-    attribute :rotation_angle, TD::Types::Integer
+    attribute :top_color, TD::Types::Coercible::Integer
+    attribute :bottom_color, TD::Types::Coercible::Integer
+    attribute :rotation_angle, TD::Types::Coercible::Integer
   end
 end

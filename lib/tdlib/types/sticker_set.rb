@@ -2,8 +2,8 @@ module TD::Types
   # Represents a sticker set.
   #
   # @attr id [Integer] Identifier of the sticker set.
-  # @attr title [String] Title of the sticker set.
-  # @attr name [String] Name of the sticker set.
+  # @attr title [TD::Types::String] Title of the sticker set.
+  # @attr name [TD::Types::String] Name of the sticker set.
   # @attr thumbnail [TD::Types::Thumbnail, nil] Sticker set thumbnail in WEBP or TGS format with width and height 100;
   #   may be null.
   #   The file can be downloaded only before the thumbnail is changed.
@@ -22,7 +22,7 @@ module TD::Types
   #   The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the
   #   corresponding Sticker object.
   class StickerSet < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :title, TD::Types::String
     attribute :name, TD::Types::String
     attribute :thumbnail, TD::Types::Thumbnail.optional.default(nil)

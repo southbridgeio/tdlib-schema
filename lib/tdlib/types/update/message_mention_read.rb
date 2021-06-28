@@ -5,8 +5,8 @@ module TD::Types
   # @attr message_id [Integer] Message identifier.
   # @attr unread_mention_count [Integer] The new number of unread mention messages left in the chat.
   class Update::MessageMentionRead < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
-    attribute :unread_mention_count, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
+    attribute :unread_mention_count, TD::Types::Coercible::Integer
   end
 end

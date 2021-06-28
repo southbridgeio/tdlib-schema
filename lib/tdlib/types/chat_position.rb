@@ -8,7 +8,7 @@ module TD::Types
   # @attr source [TD::Types::ChatSource, nil] Source of the chat in the chat list; may be null.
   class ChatPosition < Base
     attribute :list, TD::Types::ChatList
-    attribute :order, TD::Types::Integer
+    attribute :order, TD::Types::Coercible::Integer
     attribute :is_pinned, TD::Types::Bool
     attribute :source, TD::Types::ChatSource.optional.default(nil)
   end

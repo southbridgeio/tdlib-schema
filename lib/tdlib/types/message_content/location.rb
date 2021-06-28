@@ -14,9 +14,9 @@ module TD::Types
   #   Available only for the message sender.
   class MessageContent::Location < MessageContent
     attribute :location, TD::Types::Location
-    attribute :live_period, TD::Types::Integer
-    attribute :expires_in, TD::Types::Integer
-    attribute :heading, TD::Types::Integer
-    attribute :proximity_alert_radius, TD::Types::Integer
+    attribute :live_period, TD::Types::Coercible::Integer
+    attribute :expires_in, TD::Types::Coercible::Integer
+    attribute :heading, TD::Types::Coercible::Integer
+    attribute :proximity_alert_radius, TD::Types::Coercible::Integer
   end
 end

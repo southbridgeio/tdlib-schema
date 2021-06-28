@@ -6,8 +6,8 @@ module TD::Types
   #   game.
   # @attr score [Integer] New score.
   class MessageContent::GameScore < MessageContent
-    attribute :game_message_id, TD::Types::Integer
-    attribute :game_id, TD::Types::Integer
-    attribute :score, TD::Types::Integer
+    attribute :game_message_id, TD::Types::Coercible::Integer
+    attribute :game_id, TD::Types::Coercible::Integer
+    attribute :score, TD::Types::Coercible::Integer
   end
 end

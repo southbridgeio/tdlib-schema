@@ -7,7 +7,7 @@ module TD::Types
   # @attr unread_unmuted_count [Integer] Total number of unread messages in unmuted chats.
   class Update::UnreadMessageCount < Update
     attribute :chat_list, TD::Types::ChatList
-    attribute :unread_count, TD::Types::Integer
-    attribute :unread_unmuted_count, TD::Types::Integer
+    attribute :unread_count, TD::Types::Coercible::Integer
+    attribute :unread_unmuted_count, TD::Types::Coercible::Integer
   end
 end

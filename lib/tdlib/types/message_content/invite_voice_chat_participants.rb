@@ -5,7 +5,7 @@ module TD::Types
   #   The voice chat can be received through the method getGroupCall.
   # @attr user_ids [Array<Integer>] Invited user identifiers.
   class MessageContent::InviteVoiceChatParticipants < MessageContent
-    attribute :group_call_id, TD::Types::Integer
-    attribute :user_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :group_call_id, TD::Types::Coercible::Integer
+    attribute :user_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

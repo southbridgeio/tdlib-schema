@@ -10,7 +10,7 @@ module TD::Types
   # @attr minithumbnail [TD::Types::Minithumbnail, nil] User profile photo minithumbnail; may be null.
   # @attr has_animation [Boolean] True, if the photo has animated variant.
   class ProfilePhoto < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :small, TD::Types::File
     attribute :big, TD::Types::File
     attribute :minithumbnail, TD::Types::Minithumbnail.optional.default(nil)

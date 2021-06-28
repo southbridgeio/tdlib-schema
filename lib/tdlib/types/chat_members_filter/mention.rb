@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr message_thread_id [Integer] If non-zero, the identifier of the current message thread.
   class ChatMembersFilter::Mention < ChatMembersFilter
-    attribute :message_thread_id, TD::Types::Integer
+    attribute :message_thread_id, TD::Types::Coercible::Integer
   end
 end

@@ -6,6 +6,6 @@ module TD::Types
   # @attr sticker_ids [Array<Integer>] The new list of file identifiers of recently used stickers.
   class Update::RecentStickers < Update
     attribute :is_attached, TD::Types::Bool
-    attribute :sticker_ids, TD::Types::Array.of(TD::Types::Integer)
+    attribute :sticker_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
   end
 end

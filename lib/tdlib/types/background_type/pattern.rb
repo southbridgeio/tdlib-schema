@@ -7,7 +7,7 @@ module TD::Types
   # @attr is_moving [Boolean] True, if the background needs to be slightly moved when device is tilted.
   class BackgroundType::Pattern < BackgroundType
     attribute :fill, TD::Types::BackgroundFill
-    attribute :intensity, TD::Types::Integer
+    attribute :intensity, TD::Types::Coercible::Integer
     attribute :is_moving, TD::Types::Bool
   end
 end

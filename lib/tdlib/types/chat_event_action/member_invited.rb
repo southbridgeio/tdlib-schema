@@ -4,7 +4,7 @@ module TD::Types
   # @attr user_id [Integer] New member user identifier.
   # @attr status [TD::Types::ChatMemberStatus] New member status.
   class ChatEventAction::MemberInvited < ChatEventAction
-    attribute :user_id, TD::Types::Integer
+    attribute :user_id, TD::Types::Coercible::Integer
     attribute :status, TD::Types::ChatMemberStatus
   end
 end

@@ -12,8 +12,8 @@ module TD::Types
   #   Can't be enabled in channels and Saved Messages.
   class InputMessageContent::Location < InputMessageContent
     attribute :location, TD::Types::Location
-    attribute :live_period, TD::Types::Integer
-    attribute :heading, TD::Types::Integer
-    attribute :proximity_alert_radius, TD::Types::Integer
+    attribute :live_period, TD::Types::Coercible::Integer
+    attribute :heading, TD::Types::Coercible::Integer
+    attribute :proximity_alert_radius, TD::Types::Coercible::Integer
   end
 end

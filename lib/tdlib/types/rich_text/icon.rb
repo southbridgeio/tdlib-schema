@@ -7,7 +7,7 @@ module TD::Types
   # @attr height [Integer] Height of a bounding box in which the image should be shown; 0 if unknown.
   class RichText::Icon < RichText
     attribute :document, TD::Types::Document
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
   end
 end

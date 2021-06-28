@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr data [String] File bytes.
   class FilePart < Base
-    attribute :data, TD::Types::String
+    attribute :data, TD::Types::Coercible::String
   end
 end

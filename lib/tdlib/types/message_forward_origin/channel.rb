@@ -3,10 +3,10 @@ module TD::Types
   #
   # @attr chat_id [Integer] Identifier of the chat from which the message was originally forwarded.
   # @attr message_id [Integer] Message identifier of the original message.
-  # @attr author_signature [String] Original post author signature.
+  # @attr author_signature [TD::Types::String] Original post author signature.
   class MessageForwardOrigin::Channel < MessageForwardOrigin
-    attribute :chat_id, TD::Types::Integer
-    attribute :message_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :message_id, TD::Types::Coercible::Integer
     attribute :author_signature, TD::Types::String
   end
 end

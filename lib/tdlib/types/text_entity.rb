@@ -5,8 +5,8 @@ module TD::Types
   # @attr length [Integer] Length of the entity, in UTF-16 code units.
   # @attr type [TD::Types::TextEntityType] Type of the entity.
   class TextEntity < Base
-    attribute :offset, TD::Types::Integer
-    attribute :length, TD::Types::Integer
+    attribute :offset, TD::Types::Coercible::Integer
+    attribute :length, TD::Types::Coercible::Integer
     attribute :type, TD::Types::TextEntityType
   end
 end

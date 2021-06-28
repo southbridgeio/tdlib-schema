@@ -7,6 +7,6 @@ module TD::Types
   # @attr main_frame_timestamp [Float] Timestamp of the frame, which will be used as static chat photo.
   class InputChatPhoto::Animation < InputChatPhoto
     attribute :animation, TD::Types::InputFile
-    attribute :main_frame_timestamp, TD::Types::Float
+    attribute :main_frame_timestamp, TD::Types::Coercible::Float
   end
 end

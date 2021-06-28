@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr chat_id [Integer] Identifier of the chat that sent the message.
   class MessageSender::Chat < MessageSender
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
   end
 end

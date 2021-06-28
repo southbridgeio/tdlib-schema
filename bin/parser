@@ -8,11 +8,11 @@ def parse_tl_type(type)
   if (vector = type.scan(/[vV]ector<(.*)>/)).length > 0
     "TD::Types::Array.of(#{parse_tl_type(vector[0][0])})"
   elsif type.match?(/[iI]nt\d\d/)
-    'TD::Types::Integer'
+    'TD::Types::Coercible::Integer'
   elsif type.match?(/[dD]ouble/)
-    'TD::Types::Float'
+    'TD::Types::Coercible::Float'
   elsif type.match?(/[bB]ytes/)
-    'TD::Types::String'
+    'TD::Types::Coercible::String'
   else
     "TD::Types::#{type.camelcase}"
   end
@@ -186,9 +186,9 @@ end
 
 def type_to_comment_type(type)
   type.gsub('TD::Types::Array.of(', 'Array<').gsub(')', '>').
-      gsub('TD::Types::Integer', 'Integer').
-      gsub('TD::Types::Float',   'Float').
-      gsub('TD::Types::String',  'String').
+      gsub('TD::Types::Coercible::Integer', 'Integer').
+      gsub('TD::Types::Coercible::Float',   'Float').
+      gsub('TD::Types::Coercible::String',  'String').
       gsub('TD::Types::Bool',    'Boolean')
 end
 

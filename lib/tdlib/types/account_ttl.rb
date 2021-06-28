@@ -5,6 +5,6 @@ module TD::Types
   # @attr days [Integer] Number of days of inactivity before the account will be flagged for deletion; should range
   #   from 30-366 days.
   class AccountTtl < Base
-    attribute :days, TD::Types::Integer
+    attribute :days, TD::Types::Coercible::Integer
   end
 end

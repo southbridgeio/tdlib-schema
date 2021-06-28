@@ -7,8 +7,8 @@ module TD::Types
   # @attr sizes [Array<TD::Types::PhotoSize>] Available variants of the photo in JPEG format, in different size.
   # @attr animation [TD::Types::AnimatedChatPhoto, nil] Animated variant of the photo in MPEG4 format; may be null.
   class ChatPhoto < Base
-    attribute :id, TD::Types::Integer
-    attribute :added_date, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :added_date, TD::Types::Coercible::Integer
     attribute :minithumbnail, TD::Types::Minithumbnail.optional.default(nil)
     attribute :sizes, TD::Types::Array.of(TD::Types::PhotoSize)
     attribute :animation, TD::Types::AnimatedChatPhoto.optional.default(nil)

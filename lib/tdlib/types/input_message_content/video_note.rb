@@ -8,7 +8,7 @@ module TD::Types
   class InputMessageContent::VideoNote < InputMessageContent
     attribute :video_note, TD::Types::InputFile
     attribute :thumbnail, TD::Types::InputThumbnail.optional.default(nil)
-    attribute :duration, TD::Types::Integer
-    attribute :length, TD::Types::Integer
+    attribute :duration, TD::Types::Coercible::Integer
+    attribute :length, TD::Types::Coercible::Integer
   end
 end

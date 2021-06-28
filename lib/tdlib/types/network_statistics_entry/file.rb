@@ -9,7 +9,7 @@ module TD::Types
   class NetworkStatisticsEntry::File < NetworkStatisticsEntry
     attribute :file_type, TD::Types::FileType
     attribute :network_type, TD::Types::NetworkType
-    attribute :sent_bytes, TD::Types::Integer
-    attribute :received_bytes, TD::Types::Integer
+    attribute :sent_bytes, TD::Types::Coercible::Integer
+    attribute :received_bytes, TD::Types::Coercible::Integer
   end
 end

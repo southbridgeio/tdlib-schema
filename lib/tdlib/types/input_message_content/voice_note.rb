@@ -7,8 +7,8 @@ module TD::Types
   # @attr caption [TD::Types::FormattedText] Voice note caption; 0-GetOption("message_caption_length_max") characters.
   class InputMessageContent::VoiceNote < InputMessageContent
     attribute :voice_note, TD::Types::InputFile
-    attribute :duration, TD::Types::Integer
-    attribute :waveform, TD::Types::String
+    attribute :duration, TD::Types::Coercible::Integer
+    attribute :waveform, TD::Types::Coercible::String
     attribute :caption, TD::Types::FormattedText
   end
 end

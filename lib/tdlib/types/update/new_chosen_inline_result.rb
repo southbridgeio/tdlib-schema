@@ -3,11 +3,11 @@ module TD::Types
   #
   # @attr sender_user_id [Integer] Identifier of the user who sent the query.
   # @attr user_location [TD::Types::Location, nil] User location; may be null.
-  # @attr query [String] Text of the query.
-  # @attr result_id [String] Identifier of the chosen result.
-  # @attr inline_message_id [String] Identifier of the sent inline message, if known.
+  # @attr query [TD::Types::String] Text of the query.
+  # @attr result_id [TD::Types::String] Identifier of the chosen result.
+  # @attr inline_message_id [TD::Types::String] Identifier of the sent inline message, if known.
   class Update::NewChosenInlineResult < Update
-    attribute :sender_user_id, TD::Types::Integer
+    attribute :sender_user_id, TD::Types::Coercible::Integer
     attribute :user_location, TD::Types::Location.optional.default(nil)
     attribute :query, TD::Types::String
     attribute :result_id, TD::Types::String

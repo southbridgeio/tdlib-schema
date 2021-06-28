@@ -1,8 +1,8 @@
 module TD::Types
   # A WebRTC server.
   #
-  # @attr username [String] Username to be used for authentication.
-  # @attr password [String] Authentication password.
+  # @attr username [TD::Types::String] Username to be used for authentication.
+  # @attr password [TD::Types::String] Authentication password.
   # @attr supports_turn [Boolean] True, if the server supports TURN.
   # @attr supports_stun [Boolean] True, if the server supports STUN.
   class CallServerType::Webrtc < CallServerType

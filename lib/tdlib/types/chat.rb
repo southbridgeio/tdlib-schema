@@ -4,7 +4,7 @@ module TD::Types
   #
   # @attr id [Integer] Chat unique identifier.
   # @attr type [TD::Types::ChatType] Type of the chat.
-  # @attr title [String] Chat title.
+  # @attr title [TD::Types::String] Chat title.
   # @attr photo [TD::Types::ChatPhotoInfo, nil] Chat photo; may be null.
   # @attr permissions [TD::Types::ChatPermissions] Actions that non-administrator chat members are allowed to take in
   #   the chat.
@@ -36,11 +36,11 @@ module TD::Types
   # @attr reply_markup_message_id [Integer] Identifier of the message from which reply markup needs to be used; 0 if
   #   there is no default custom reply markup in the chat.
   # @attr draft_message [TD::Types::DraftMessage, nil] A draft of a message in the chat; may be null.
-  # @attr client_data [String] Contains application-specific data associated with the chat.
+  # @attr client_data [TD::Types::String] Contains application-specific data associated with the chat.
   #   (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the
   #   message database is used.
   class Chat < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :type, TD::Types::ChatType
     attribute :title, TD::Types::String
     attribute :photo, TD::Types::ChatPhotoInfo.optional.default(nil)
@@ -54,15 +54,15 @@ module TD::Types
     attribute :can_be_deleted_for_all_users, TD::Types::Bool
     attribute :can_be_reported, TD::Types::Bool
     attribute :default_disable_notification, TD::Types::Bool
-    attribute :unread_count, TD::Types::Integer
-    attribute :last_read_inbox_message_id, TD::Types::Integer
-    attribute :last_read_outbox_message_id, TD::Types::Integer
-    attribute :unread_mention_count, TD::Types::Integer
+    attribute :unread_count, TD::Types::Coercible::Integer
+    attribute :last_read_inbox_message_id, TD::Types::Coercible::Integer
+    attribute :last_read_outbox_message_id, TD::Types::Coercible::Integer
+    attribute :unread_mention_count, TD::Types::Coercible::Integer
     attribute :notification_settings, TD::Types::ChatNotificationSettings
-    attribute :message_ttl_setting, TD::Types::Integer
+    attribute :message_ttl_setting, TD::Types::Coercible::Integer
     attribute :action_bar, TD::Types::ChatActionBar.optional.default(nil)
     attribute :voice_chat, TD::Types::VoiceChat
-    attribute :reply_markup_message_id, TD::Types::Integer
+    attribute :reply_markup_message_id, TD::Types::Coercible::Integer
     attribute :draft_message, TD::Types::DraftMessage.optional.default(nil)
     attribute :client_data, TD::Types::String
   end

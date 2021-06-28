@@ -4,6 +4,6 @@ module TD::Types
   #
   # @attr id [Integer] The globally unique identifier of push notification subscription.
   class PushReceiverId < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
   end
 end

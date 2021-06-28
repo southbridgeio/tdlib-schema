@@ -6,7 +6,7 @@ module TD::Types
   # @attr chat_id [Integer] Identifier of the chat.
   # @attr online_member_count [Integer] New number of online members in the chat, or 0 if unknown.
   class Update::ChatOnlineMemberCount < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :online_member_count, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :online_member_count, TD::Types::Coercible::Integer
   end
 end

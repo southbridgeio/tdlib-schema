@@ -4,7 +4,7 @@ module TD::Types
   # @attr chat_id [Integer] Chat identifier.
   # @attr action_bar [TD::Types::ChatActionBar, nil] The new value of the action bar; may be null.
   class Update::ChatActionBar < Update
-    attribute :chat_id, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
     attribute :action_bar, TD::Types::ChatActionBar.optional.default(nil)
   end
 end

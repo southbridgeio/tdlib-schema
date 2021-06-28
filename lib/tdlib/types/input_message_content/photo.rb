@@ -13,10 +13,10 @@ module TD::Types
   class InputMessageContent::Photo < InputMessageContent
     attribute :photo, TD::Types::InputFile
     attribute :thumbnail, TD::Types::InputThumbnail
-    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Integer)
-    attribute :width, TD::Types::Integer
-    attribute :height, TD::Types::Integer
+    attribute :added_sticker_file_ids, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :width, TD::Types::Coercible::Integer
+    attribute :height, TD::Types::Coercible::Integer
     attribute :caption, TD::Types::FormattedText
-    attribute :ttl, TD::Types::Integer
+    attribute :ttl, TD::Types::Coercible::Integer
   end
 end

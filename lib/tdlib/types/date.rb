@@ -5,8 +5,8 @@ module TD::Types
   # @attr month [Integer] Month; 1-12.
   # @attr year [Integer] Year; 1-9999.
   class Date < Base
-    attribute :day, TD::Types::Integer
-    attribute :month, TD::Types::Integer
-    attribute :year, TD::Types::Integer
+    attribute :day, TD::Types::Coercible::Integer
+    attribute :month, TD::Types::Coercible::Integer
+    attribute :year, TD::Types::Coercible::Integer
   end
 end

@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr supergroup_id [Integer] Identifier of the supergroup or channel.
   class TMeUrlType::Supergroup < TMeUrlType
-    attribute :supergroup_id, TD::Types::Integer
+    attribute :supergroup_id, TD::Types::Coercible::Integer
   end
 end

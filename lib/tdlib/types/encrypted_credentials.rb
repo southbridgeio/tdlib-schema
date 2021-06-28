@@ -5,8 +5,8 @@ module TD::Types
   # @attr hash [String] The decrypted data hash.
   # @attr secret [String] Secret for data decryption, encrypted with the service's public key.
   class EncryptedCredentials < Base
-    attribute :data, TD::Types::String
-    attribute :hash, TD::Types::String
-    attribute :secret, TD::Types::String
+    attribute :data, TD::Types::Coercible::String
+    attribute :hash, TD::Types::Coercible::String
+    attribute :secret, TD::Types::Coercible::String
   end
 end

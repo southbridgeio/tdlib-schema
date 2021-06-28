@@ -9,8 +9,8 @@ module TD::Types
   #   A network request might be needed to get the full web page instant view.
   class WebPageInstantView < Base
     attribute :page_blocks, TD::Types::Array.of(TD::Types::PageBlock)
-    attribute :view_count, TD::Types::Integer
-    attribute :version, TD::Types::Integer
+    attribute :view_count, TD::Types::Coercible::Integer
+    attribute :version, TD::Types::Coercible::Integer
     attribute :is_rtl, TD::Types::Bool
     attribute :is_full, TD::Types::Bool
   end

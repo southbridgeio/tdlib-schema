@@ -13,10 +13,10 @@ module TD::Types
   # @attr use_less_data_for_calls [Boolean] True, if "use less data for calls" option needs to be enabled.
   class AutoDownloadSettings < Base
     attribute :is_auto_download_enabled, TD::Types::Bool
-    attribute :max_photo_file_size, TD::Types::Integer
-    attribute :max_video_file_size, TD::Types::Integer
-    attribute :max_other_file_size, TD::Types::Integer
-    attribute :video_upload_bitrate, TD::Types::Integer
+    attribute :max_photo_file_size, TD::Types::Coercible::Integer
+    attribute :max_video_file_size, TD::Types::Coercible::Integer
+    attribute :max_other_file_size, TD::Types::Coercible::Integer
+    attribute :video_upload_bitrate, TD::Types::Coercible::Integer
     attribute :preload_large_videos, TD::Types::Bool
     attribute :preload_next_audio, TD::Types::Bool
     attribute :use_less_data_for_calls, TD::Types::Bool

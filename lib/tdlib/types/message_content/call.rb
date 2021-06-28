@@ -7,6 +7,6 @@ module TD::Types
   class MessageContent::Call < MessageContent
     attribute :is_video, TD::Types::Bool
     attribute :discard_reason, TD::Types::CallDiscardReason
-    attribute :duration, TD::Types::Integer
+    attribute :duration, TD::Types::Coercible::Integer
   end
 end

@@ -1,13 +1,13 @@
 module TD::Types
   # Contains information about a language pack.
   #
-  # @attr id [String] Unique language pack identifier.
-  # @attr base_language_pack_id [String, nil] Identifier of a base language pack; may be empty.
+  # @attr id [TD::Types::String] Unique language pack identifier.
+  # @attr base_language_pack_id [TD::Types::String, nil] Identifier of a base language pack; may be empty.
   #   If a string is missed in the language pack, then it should be fetched from base language pack.
   #   Unsupported in custom language packs.
-  # @attr name [String] Language name.
-  # @attr native_name [String] Name of the language in that language.
-  # @attr plural_code [String] A language code to be used to apply plural forms.
+  # @attr name [TD::Types::String] Language name.
+  # @attr native_name [TD::Types::String] Name of the language in that language.
+  # @attr plural_code [TD::Types::String] A language code to be used to apply plural forms.
   #   See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more info.
   # @attr is_official [Boolean] True, if the language pack is official.
   # @attr is_rtl [Boolean] True, if the language pack strings are RTL.
@@ -16,7 +16,8 @@ module TD::Types
   # @attr total_string_count [Integer] Total number of non-deleted strings from the language pack.
   # @attr translated_string_count [Integer] Total number of translated strings from the language pack.
   # @attr local_string_count [Integer] Total number of non-deleted strings from the language pack available locally.
-  # @attr translation_url [String, nil] Link to language translation interface; empty for custom local language packs.
+  # @attr translation_url [TD::Types::String, nil] Link to language translation interface; empty for custom local
+  #   language packs.
   class LanguagePackInfo < Base
     attribute :id, TD::Types::String
     attribute :base_language_pack_id, TD::Types::String.optional.default(nil)
@@ -27,9 +28,9 @@ module TD::Types
     attribute :is_rtl, TD::Types::Bool
     attribute :is_beta, TD::Types::Bool
     attribute :is_installed, TD::Types::Bool
-    attribute :total_string_count, TD::Types::Integer
-    attribute :translated_string_count, TD::Types::Integer
-    attribute :local_string_count, TD::Types::Integer
+    attribute :total_string_count, TD::Types::Coercible::Integer
+    attribute :translated_string_count, TD::Types::Coercible::Integer
+    attribute :local_string_count, TD::Types::Coercible::Integer
     attribute :translation_url, TD::Types::String.optional.default(nil)
   end
 end

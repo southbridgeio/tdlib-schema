@@ -7,10 +7,10 @@ module TD::Types
   # @attr is_active [Boolean] True, if the group is active.
   # @attr upgraded_to_supergroup_id [Integer] Identifier of the supergroup to which this group was upgraded; 0 if none.
   class BasicGroup < Base
-    attribute :id, TD::Types::Integer
-    attribute :member_count, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
+    attribute :member_count, TD::Types::Coercible::Integer
     attribute :status, TD::Types::ChatMemberStatus
     attribute :is_active, TD::Types::Bool
-    attribute :upgraded_to_supergroup_id, TD::Types::Integer
+    attribute :upgraded_to_supergroup_id, TD::Types::Coercible::Integer
   end
 end

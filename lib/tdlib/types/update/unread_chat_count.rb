@@ -11,10 +11,10 @@ module TD::Types
   # @attr marked_as_unread_unmuted_count [Integer] Total number of unmuted chats marked as unread.
   class Update::UnreadChatCount < Update
     attribute :chat_list, TD::Types::ChatList
-    attribute :total_count, TD::Types::Integer
-    attribute :unread_count, TD::Types::Integer
-    attribute :unread_unmuted_count, TD::Types::Integer
-    attribute :marked_as_unread_count, TD::Types::Integer
-    attribute :marked_as_unread_unmuted_count, TD::Types::Integer
+    attribute :total_count, TD::Types::Coercible::Integer
+    attribute :unread_count, TD::Types::Coercible::Integer
+    attribute :unread_unmuted_count, TD::Types::Coercible::Integer
+    attribute :marked_as_unread_count, TD::Types::Coercible::Integer
+    attribute :marked_as_unread_unmuted_count, TD::Types::Coercible::Integer
   end
 end

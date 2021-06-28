@@ -3,6 +3,6 @@ module TD::Types
   #
   # @attr ttl [Integer] New message TTL setting.
   class MessageContent::ChatSetTtl < MessageContent
-    attribute :ttl, TD::Types::Integer
+    attribute :ttl, TD::Types::Coercible::Integer
   end
 end

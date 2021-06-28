@@ -1,7 +1,7 @@
 module TD::Types
   # A text with some entities.
   #
-  # @attr text [String] The text.
+  # @attr text [TD::Types::String] The text.
   # @attr entities [Array<TD::Types::TextEntity>] Entities contained in the text.
   #   Entities can be nested, but must not mutually intersect with each other.
   #   Pre, Code and PreCode entities can't contain other entities.

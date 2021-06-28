@@ -6,6 +6,6 @@ module TD::Types
   # @attr old_message_id [Integer] The previous temporary message identifier.
   class Update::MessageSendSucceeded < Update
     attribute :message, TD::Types::Message
-    attribute :old_message_id, TD::Types::Integer
+    attribute :old_message_id, TD::Types::Coercible::Integer
   end
 end

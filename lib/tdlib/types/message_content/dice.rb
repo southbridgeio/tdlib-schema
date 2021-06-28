@@ -8,7 +8,7 @@ module TD::Types
   # @attr final_state [TD::Types::DiceStickers, nil] The animated stickers with the final dice animation; may be null
   #   if unknown.
   #   {TD::Types::Update::MessageContent} will be sent when the sticker became known.
-  # @attr emoji [String] Emoji on which the dice throw animation is based.
+  # @attr emoji [TD::Types::String] Emoji on which the dice throw animation is based.
   # @attr value [Integer] The dice value.
   #   If the value is 0, the dice don't have final state yet.
   # @attr success_animation_frame_number [Integer] Number of frame after which a success animation like a shower of
@@ -17,7 +17,7 @@ module TD::Types
     attribute :initial_state, TD::Types::DiceStickers.optional.default(nil)
     attribute :final_state, TD::Types::DiceStickers.optional.default(nil)
     attribute :emoji, TD::Types::String
-    attribute :value, TD::Types::Integer
-    attribute :success_animation_frame_number, TD::Types::Integer
+    attribute :value, TD::Types::Coercible::Integer
+    attribute :success_animation_frame_number, TD::Types::Coercible::Integer
   end
 end

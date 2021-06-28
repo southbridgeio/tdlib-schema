@@ -1,8 +1,8 @@
 module TD::Types
   # Describes a document of any type.
   #
-  # @attr file_name [String] Original name of the file; as defined by the sender.
-  # @attr mime_type [String] MIME type of the file; as defined by the sender.
+  # @attr file_name [TD::Types::String] Original name of the file; as defined by the sender.
+  # @attr mime_type [TD::Types::String] MIME type of the file; as defined by the sender.
   # @attr minithumbnail [TD::Types::Minithumbnail, nil] Document minithumbnail; may be null.
   # @attr thumbnail [TD::Types::Thumbnail, nil] Document thumbnail in JPEG or PNG format (PNG will be used only for
   #   background patterns); as defined by the sender; may be null.

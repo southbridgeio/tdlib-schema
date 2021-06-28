@@ -6,7 +6,7 @@ module TD::Types
   # @attr start_date [Integer] Point in time (Unix timestamp) when the group call is supposed to be started by an
   #   administrator.
   class MessageContent::VoiceChatScheduled < MessageContent
-    attribute :group_call_id, TD::Types::Integer
-    attribute :start_date, TD::Types::Integer
+    attribute :group_call_id, TD::Types::Coercible::Integer
+    attribute :start_date, TD::Types::Coercible::Integer
   end
 end

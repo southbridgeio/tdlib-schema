@@ -5,8 +5,8 @@ module TD::Types
   # @attr last_read_inbox_message_id [Integer] Identifier of the last read incoming message.
   # @attr unread_count [Integer] The number of unread messages left in the chat.
   class Update::ChatReadInbox < Update
-    attribute :chat_id, TD::Types::Integer
-    attribute :last_read_inbox_message_id, TD::Types::Integer
-    attribute :unread_count, TD::Types::Integer
+    attribute :chat_id, TD::Types::Coercible::Integer
+    attribute :last_read_inbox_message_id, TD::Types::Coercible::Integer
+    attribute :unread_count, TD::Types::Coercible::Integer
   end
 end

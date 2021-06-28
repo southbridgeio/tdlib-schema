@@ -2,8 +2,8 @@ module TD::Types
   # Represents short information about a sticker set.
   #
   # @attr id [Integer] Identifier of the sticker set.
-  # @attr title [String] Title of the sticker set.
-  # @attr name [String] Name of the sticker set.
+  # @attr title [TD::Types::String] Title of the sticker set.
+  # @attr name [TD::Types::String] Name of the sticker set.
   # @attr thumbnail [TD::Types::Thumbnail, nil] Sticker set thumbnail in WEBP or TGS format with width and height 100;
   #   may be null.
   # @attr thumbnail_outline [Array<TD::Types::ClosedVectorPath>, nil] Sticker set thumbnail's outline represented as a
@@ -21,7 +21,7 @@ module TD::Types
   #   context.
   #   If the application needs more stickers the full set should be requested.
   class StickerSetInfo < Base
-    attribute :id, TD::Types::Integer
+    attribute :id, TD::Types::Coercible::Integer
     attribute :title, TD::Types::String
     attribute :name, TD::Types::String
     attribute :thumbnail, TD::Types::Thumbnail.optional.default(nil)
@@ -32,7 +32,7 @@ module TD::Types
     attribute :is_animated, TD::Types::Bool
     attribute :is_masks, TD::Types::Bool
     attribute :is_viewed, TD::Types::Bool
-    attribute :size, TD::Types::Integer
+    attribute :size, TD::Types::Coercible::Integer
     attribute :covers, TD::Types::Array.of(TD::Types::Sticker)
   end
 end

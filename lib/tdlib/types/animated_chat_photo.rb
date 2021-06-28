@@ -5,8 +5,8 @@ module TD::Types
   # @attr file [TD::Types::File] Information about the animation file.
   # @attr main_frame_timestamp [Float] Timestamp of the frame, used as a static chat photo.
   class AnimatedChatPhoto < Base
-    attribute :length, TD::Types::Integer
+    attribute :length, TD::Types::Coercible::Integer
     attribute :file, TD::Types::File
-    attribute :main_frame_timestamp, TD::Types::Float
+    attribute :main_frame_timestamp, TD::Types::Coercible::Float
   end
 end
