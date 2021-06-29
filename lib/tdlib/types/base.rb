@@ -1,8 +1,5 @@
 module TD::Types
-  class Base < Dry::Struct
-    # throw an error when unknown keys provided
-    schema schema.strict
-    
+  class Base < Dry::Struct    
     # convert string keys to symbols
     transform_keys(&:to_sym)
     
