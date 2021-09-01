@@ -3,7 +3,8 @@ module TD::Types
   #   background fill chosen by the user.
   #
   # @attr fill [TD::Types::BackgroundFill] Description of the background fill.
-  # @attr intensity [Integer] Intensity of the pattern when it is shown above the filled background; 0-100.
+  # @attr intensity [Integer] Intensity of the pattern when it is shown above the filled background; -100-100.
+  #   If negative, the pattern color and the filled background colors needs to be inverted.
   # @attr is_moving [Boolean] True, if the background needs to be slightly moved when device is tilted.
   class BackgroundType::Pattern < BackgroundType
     attribute :fill, TD::Types::BackgroundFill

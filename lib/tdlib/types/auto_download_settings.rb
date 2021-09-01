@@ -5,7 +5,7 @@ module TD::Types
   # @attr max_photo_file_size [Integer] The maximum size of a photo file to be auto-downloaded.
   # @attr max_video_file_size [Integer] The maximum size of a video file to be auto-downloaded.
   # @attr max_other_file_size [Integer] The maximum size of other file types to be auto-downloaded.
-  # @attr video_upload_bitrate [Integer] The maximum suggested bitrate for uploaded videos.
+  # @attr video_upload_bitrate [Integer] The maximum suggested bitrate for uploaded videos, in kbit/s.
   # @attr preload_large_videos [Boolean] True, if the beginning of video files needs to be preloaded for instant
   #   playback.
   # @attr preload_next_audio [Boolean] True, if the next audio track needs to be preloaded while the user is listening
