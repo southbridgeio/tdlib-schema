@@ -23,14 +23,12 @@ module TD::Types
       chat_is_marked_as_unread
       chat_is_blocked
       chat_has_scheduled_messages
-      chat_voice_chat
       chat_default_disable_notification
       chat_read_inbox
       chat_read_outbox
       chat_unread_mention_count
       chat_notification_settings
       scope_notification_settings
-      chat_message_ttl_setting
       chat_action_bar
       chat_reply_markup
       chat_draft_message
@@ -55,8 +53,6 @@ module TD::Types
       file_generation_start
       file_generation_stop
       call
-      group_call
-      group_call_participant
       new_call_signaling_data
       user_privacy_setting_rules
       unread_message_count
@@ -86,7 +82,6 @@ module TD::Types
       new_custom_query
       poll
       poll_answer
-      chat_member
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/update/#{type}"
     end

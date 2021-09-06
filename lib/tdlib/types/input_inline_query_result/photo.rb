@@ -11,8 +11,8 @@ module TD::Types
   # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup.
   #   Must be of type {TD::Types::ReplyMarkup::InlineKeyboard} or null.
   # @attr input_message_content [TD::Types::InputMessageContent] The content of the message to be sent.
-  #   Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice,
-  #   inputMessageLocation, {TD::Types::InputMessageContent::Venue} or inputMessageContact.
+  #   Must be one of the following types: InputMessageText, InputMessagePhoto, InputMessageLocation, InputMessageVenue
+  #   or InputMessageContact.
   class InputInlineQueryResult::Photo < InputInlineQueryResult
     attribute :id, TD::Types::String
     attribute :title, TD::Types::String

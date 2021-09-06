@@ -3,7 +3,7 @@ module TD::Types
   # Polls can't be sent to secret chats.
   # Polls can be sent only to a private chat with a bot.
   #
-  # @attr question [TD::Types::String] Poll question; 1-255 characters (up to 300 characters for bots).
+  # @attr question [TD::Types::String] Poll question, 1-255 characters (up to 300 characters for bots).
   # @attr options [Array<TD::Types::String>] List of poll answer options, 2-10 strings 1-100 characters each.
   # @attr is_anonymous [Boolean] True, if the poll voters are anonymous.
   #   Non-anonymous polls can't be sent or forwarded to channels.

@@ -17,8 +17,7 @@ module TD::Types
   # @attr can_be_deleted_only_for_self [Boolean] True, if the chat messages can be deleted only for the current user
   #   while other users will continue to see the messages.
   # @attr can_be_deleted_for_all_users [Boolean] True, if the chat messages can be deleted for all users.
-  # @attr can_be_reported [Boolean] True, if the chat can be reported to Telegram moderators through reportChat or
-  #   reportChatPhoto.
+  # @attr can_be_reported [Boolean] True, if the chat can be reported to Telegram moderators through reportChat.
   # @attr default_disable_notification [Boolean] Default value of the disable_notification parameter, used when a
   #   message is sent to the chat.
   # @attr unread_count [Integer] Number of unread messages in the chat.
@@ -26,13 +25,8 @@ module TD::Types
   # @attr last_read_outbox_message_id [Integer] Identifier of the last read outgoing message.
   # @attr unread_mention_count [Integer] Number of unread messages with a mention/reply in the chat.
   # @attr notification_settings [TD::Types::ChatNotificationSettings] Notification settings for this chat.
-  # @attr message_ttl_setting [Integer] Current message Time To Live setting (self-destruct timer) for the chat; 0 if
-  #   not defined.
-  #   TTL is counted from the time message or its content is viewed in secret chats and from the send date in other
-  #   chats.
   # @attr action_bar [TD::Types::ChatActionBar, nil] Describes actions which should be possible to do through a chat
   #   action bar; may be null.
-  # @attr voice_chat [TD::Types::VoiceChat] Contains information about voice chat of the chat.
   # @attr reply_markup_message_id [Integer] Identifier of the message from which reply markup needs to be used; 0 if
   #   there is no default custom reply markup in the chat.
   # @attr draft_message [TD::Types::DraftMessage, nil] A draft of a message in the chat; may be null.
@@ -59,9 +53,7 @@ module TD::Types
     attribute :last_read_outbox_message_id, TD::Types::Coercible::Integer
     attribute :unread_mention_count, TD::Types::Coercible::Integer
     attribute :notification_settings, TD::Types::ChatNotificationSettings
-    attribute :message_ttl_setting, TD::Types::Coercible::Integer
     attribute :action_bar, TD::Types::ChatActionBar.optional.default(nil)
-    attribute :voice_chat, TD::Types::VoiceChat
     attribute :reply_markup_message_id, TD::Types::Coercible::Integer
     attribute :draft_message, TD::Types::DraftMessage.optional.default(nil)
     attribute :client_data, TD::Types::String

@@ -5,7 +5,7 @@ module TD::Types
   # @attr description [TD::Types::String] Product description.
   # @attr photo [TD::Types::Photo, nil] Product photo; may be null.
   # @attr currency [TD::Types::String] Currency for the product price.
-  # @attr total_amount [Integer] Product total price in the smallest units of the currency.
+  # @attr total_amount [Integer] Product total price in the minimal quantity of the currency.
   # @attr start_parameter [TD::Types::String] Unique invoice bot start_parameter.
   #   To share an invoice use the URL https://t.me/{bot_username}?start={start_parameter}.
   # @attr is_test [Boolean] True, if the invoice is a test invoice.

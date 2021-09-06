@@ -1,7 +1,7 @@
 module TD::Types
-  # The TTL (Time To Live) setting for messages in the chat has been changed.
+  # The TTL (Time To Live) setting messages in a secret chat has been changed.
   #
-  # @attr ttl [Integer] New message TTL setting.
+  # @attr ttl [Integer] New TTL.
   class MessageContent::ChatSetTtl < MessageContent
     attribute :ttl, TD::Types::Coercible::Integer
   end

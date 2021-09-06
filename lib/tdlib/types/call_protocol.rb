@@ -5,7 +5,7 @@ module TD::Types
   # @attr udp_reflector [Boolean] True, if connection through UDP reflectors is supported.
   # @attr min_layer [Integer] The minimum supported API layer; use 65.
   # @attr max_layer [Integer] The maximum supported API layer; use 65.
-  # @attr library_versions [Array<TD::Types::String>] List of supported tgcalls versions.
+  # @attr library_versions [Array<TD::Types::String>] List of supported libtgvoip versions.
   class CallProtocol < Base
     attribute :udp_p2p, TD::Types::Bool
     attribute :udp_reflector, TD::Types::Bool

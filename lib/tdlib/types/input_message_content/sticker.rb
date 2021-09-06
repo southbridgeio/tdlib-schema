@@ -5,12 +5,10 @@ module TD::Types
   # @attr thumbnail [TD::Types::InputThumbnail, nil] Sticker thumbnail, if available.
   # @attr width [Integer] Sticker width.
   # @attr height [Integer] Sticker height.
-  # @attr emoji [TD::Types::String] Emoji used to choose the sticker.
   class InputMessageContent::Sticker < InputMessageContent
     attribute :sticker, TD::Types::InputFile
     attribute :thumbnail, TD::Types::InputThumbnail.optional.default(nil)
     attribute :width, TD::Types::Coercible::Integer
     attribute :height, TD::Types::Coercible::Integer
-    attribute :emoji, TD::Types::String
   end
 end

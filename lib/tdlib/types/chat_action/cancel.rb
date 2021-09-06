@@ -1,5 +1,5 @@
 module TD::Types
-  # The user has canceled the previous action.
+  # The user has cancelled the previous action.
   class ChatAction::Cancel < ChatAction
   end
 end

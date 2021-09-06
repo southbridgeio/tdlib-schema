@@ -19,10 +19,6 @@ module TD::Types
   # @attr can_be_deleted_for_all_users [Boolean] True, if the message can be deleted for all users.
   # @attr can_get_statistics [Boolean] True, if the message statistics are available.
   # @attr can_get_message_thread [Boolean] True, if the message thread info is available.
-  # @attr can_get_media_timestamp_links [Boolean] True, if media timestamp links can be generated for media timestamp
-  #   entities in the message text, caption or web page description.
-  # @attr has_timestamped_media [Boolean] True, if media timestamp entities refers to a media in this message as
-  #   opposed to a media in the replied message.
   # @attr is_channel_post [Boolean] True, if the message is a channel post.
   #   All messages to channels are channel posts, all other messages are not channel posts.
   # @attr contains_unread_mention [Boolean] True, if the message contains an unread mention for the current user.
@@ -40,12 +36,11 @@ module TD::Types
   # @attr ttl [Integer] For self-destructing messages, the message's TTL (Time To Live), in seconds; 0 if none.
   #   TDLib will send {TD::Types::Update::DeleteMessages} or {TD::Types::Update::MessageContent} once the TTL expires.
   # @attr ttl_expires_in [Float] Time left before the message expires, in seconds.
-  #   If the TTL timer isn't started yet, equals to the value of the ttl field.
   # @attr via_bot_user_id [Integer] If non-zero, the user identifier of the bot through which this message was sent.
   # @attr author_signature [TD::Types::String, nil] For channel posts and anonymous group messages, optional author
   #   signature.
   # @attr media_album_id [Integer] Unique identifier of an album this message belongs to.
-  #   Only audios, documents, photos and videos can be grouped together in albums.
+  #   Only photos and videos can be grouped together in albums.
   # @attr restriction_reason [TD::Types::String] If non-empty, contains a human-readable description of the reason why
   #   access to this message must be restricted.
   # @attr content [TD::Types::MessageContent] Content of the message.
@@ -64,8 +59,6 @@ module TD::Types
     attribute :can_be_deleted_for_all_users, TD::Types::Bool
     attribute :can_get_statistics, TD::Types::Bool
     attribute :can_get_message_thread, TD::Types::Bool
-    attribute :can_get_media_timestamp_links, TD::Types::Bool
-    attribute :has_timestamped_media, TD::Types::Bool
     attribute :is_channel_post, TD::Types::Bool
     attribute :contains_unread_mention, TD::Types::Bool
     attribute :date, TD::Types::Coercible::Integer

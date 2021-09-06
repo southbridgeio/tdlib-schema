@@ -12,8 +12,6 @@ module TD::Types
   #   returned.
   # @attr info_changes [Boolean] True, if changes in chat information should be returned.
   # @attr setting_changes [Boolean] True, if changes in chat settings should be returned.
-  # @attr invite_link_changes [Boolean] True, if changes to invite links should be returned.
-  # @attr voice_chat_changes [Boolean] True, if voice chat actions should be returned.
   class ChatEventLogFilters < Base
     attribute :message_edits, TD::Types::Bool
     attribute :message_deletions, TD::Types::Bool
@@ -25,7 +23,5 @@ module TD::Types
     attribute :member_restrictions, TD::Types::Bool
     attribute :info_changes, TD::Types::Bool
     attribute :setting_changes, TD::Types::Bool
-    attribute :invite_link_changes, TD::Types::Bool
-    attribute :voice_chat_changes, TD::Types::Bool
   end
 end

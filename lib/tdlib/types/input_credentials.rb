@@ -4,8 +4,8 @@ module TD::Types
     %w[
       saved
       new
+      android_pay
       apple_pay
-      google_pay
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/input_credentials/#{type}"
     end

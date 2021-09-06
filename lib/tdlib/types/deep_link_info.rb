@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains information about a tg: deep link.
+  # Contains information about a tg:// deep link.
   #
   # @attr text [TD::Types::FormattedText] Text to be shown to the user.
   # @attr need_update_application [Boolean] True, if user should be asked to update the application.

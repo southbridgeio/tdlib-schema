@@ -1,8 +1,10 @@
 module TD::Types
   # A payment has been completed; for bots only.
   #
+  # @attr invoice_message_id [Integer] Identifier of the message with the corresponding invoice; can be an identifier
+  #   of a deleted message.
   # @attr currency [TD::Types::String] Currency for price of the product.
-  # @attr total_amount [Integer] Total price for the product, in the smallest units of the currency.
+  # @attr total_amount [Integer] Total price for the product, in the minimal quantity of the currency.
   # @attr invoice_payload [String] Invoice payload.
   # @attr shipping_option_id [TD::Types::String, nil] Identifier of the shipping option chosen by the user; may be
   #   empty if not applicable.
@@ -10,6 +12,7 @@ module TD::Types
   # @attr telegram_payment_charge_id [TD::Types::String] Telegram payment identifier.
   # @attr provider_payment_charge_id [TD::Types::String] Provider payment identifier.
   class MessageContent::PaymentSuccessfulBot < MessageContent
+    attribute :invoice_message_id, TD::Types::Coercible::Integer
     attribute :currency, TD::Types::String
     attribute :total_amount, TD::Types::Coercible::Integer
     attribute :invoice_payload, TD::Types::Coercible::String

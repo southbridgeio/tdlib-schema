@@ -1,6 +1,5 @@
 module TD::Types
   # Options to be used when a message content is copied without a link to the original message.
-  # Service messages and messageInvoice can't be copied.
   #
   # @attr send_copy [Boolean] True, if content of the message needs to be copied without a link to the original
   #   message.

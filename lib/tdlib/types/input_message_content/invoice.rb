@@ -1,5 +1,5 @@
 module TD::Types
-  # A message with an invoice; can be used only by bots.
+  # A message with an invoice; can be used only by bots and only in private chats.
   #
   # @attr invoice [TD::Types::Invoice] Invoice.
   # @attr title [TD::Types::String] Product title; 1-32 characters.
@@ -12,9 +12,7 @@ module TD::Types
   # @attr provider_token [TD::Types::String] Payment provider token.
   # @attr provider_data [TD::Types::String] JSON-encoded data about the invoice, which will be shared with the payment
   #   provider.
-  # @attr start_parameter [TD::Types::String] Unique invoice bot deep link parameter for the generation of this
-  #   invoice.
-  #   If empty, it would be possible to pay directly from forwards of the invoice message.
+  # @attr start_parameter [TD::Types::String] Unique invoice bot start_parameter for the generation of this invoice.
   class InputMessageContent::Invoice < InputMessageContent
     attribute :invoice, TD::Types::Invoice
     attribute :title, TD::Types::String

@@ -8,7 +8,6 @@ module TD::Types
       child_abuse
       copyright
       unrelated_location
-      fake
       custom
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/chat_report_reason/#{type}"

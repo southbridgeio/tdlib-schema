@@ -24,13 +24,10 @@ module TD::Types
   #   This field is only applicable to channels.
   # @attr is_slow_mode_enabled [Boolean] True, if the slow mode is enabled in the supergroup.
   # @attr is_channel [Boolean] True, if the supergroup is a channel.
-  # @attr is_broadcast_group [Boolean] True, if the supergroup is a broadcast group, i.e.
-  #   only administrators can send messages and there is no limit on number of members.
   # @attr is_verified [Boolean] True, if the supergroup or channel is verified.
   # @attr restriction_reason [TD::Types::String] If non-empty, contains a human-readable description of the reason why
   #   access to this supergroup or channel must be restricted.
-  # @attr is_scam [Boolean] True, if many users reported this supergroup or channel as a scam.
-  # @attr is_fake [Boolean] True, if many users reported this supergroup or channel as a fake account.
+  # @attr is_scam [Boolean] True, if many users reported this supergroup as a scam.
   class Supergroup < Base
     attribute :id, TD::Types::Coercible::Integer
     attribute :username, TD::Types::String.optional.default(nil)
@@ -42,10 +39,8 @@ module TD::Types
     attribute :sign_messages, TD::Types::Bool
     attribute :is_slow_mode_enabled, TD::Types::Bool
     attribute :is_channel, TD::Types::Bool
-    attribute :is_broadcast_group, TD::Types::Bool
     attribute :is_verified, TD::Types::Bool
     attribute :restriction_reason, TD::Types::String
     attribute :is_scam, TD::Types::Bool
-    attribute :is_fake, TD::Types::Bool
   end
 end

@@ -21,10 +21,6 @@ module TD::Types
       poll
       invoice
       call
-      voice_chat_scheduled
-      voice_chat_started
-      voice_chat_ended
-      invite_voice_chat_participants
       basic_group_chat_create
       supergroup_chat_create
       chat_change_title

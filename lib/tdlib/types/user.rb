@@ -16,7 +16,6 @@ module TD::Types
   # @attr restriction_reason [TD::Types::String] If non-empty, it contains a human-readable description of the reason
   #   why access to this user must be restricted.
   # @attr is_scam [Boolean] True, if many users reported this user as a scam.
-  # @attr is_fake [Boolean] True, if many users reported this user as a fake account.
   # @attr have_access [Boolean] If false, the user is inaccessible, and the only information known about the user is
   #   inside this class.
   #   It can't be passed to any method except GetUser.
@@ -36,7 +35,6 @@ module TD::Types
     attribute :is_support, TD::Types::Bool
     attribute :restriction_reason, TD::Types::String
     attribute :is_scam, TD::Types::Bool
-    attribute :is_fake, TD::Types::Bool
     attribute :have_access, TD::Types::Bool
     attribute :type, TD::Types::UserType
     attribute :language_code, TD::Types::String
