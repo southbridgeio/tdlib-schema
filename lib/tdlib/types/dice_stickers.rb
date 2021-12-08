@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains animated stickers which should be used for dice animation rendering.
+  # Contains animated stickers which must be used for dice animation rendering.
   class DiceStickers < Base
     %w[
       regular

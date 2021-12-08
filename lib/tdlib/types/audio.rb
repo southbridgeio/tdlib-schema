@@ -10,7 +10,7 @@ module TD::Types
   # @attr album_cover_minithumbnail [TD::Types::Minithumbnail, nil] The minithumbnail of the album cover; may be null.
   # @attr album_cover_thumbnail [TD::Types::Thumbnail, nil] The thumbnail of the album cover in JPEG format; as defined
   #   by the sender.
-  #   The full size thumbnail should be extracted from the downloaded file; may be null.
+  #   The full size thumbnail is supposed to be extracted from the downloaded file; may be null.
   # @attr audio [TD::Types::File] File containing the audio.
   class Audio < Base
     attribute :duration, TD::Types::Coercible::Integer

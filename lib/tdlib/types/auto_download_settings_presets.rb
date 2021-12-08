@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains auto-download settings presets for the user.
+  # Contains auto-download settings presets for the current user.
   #
   # @attr low [TD::Types::AutoDownloadSettings] Preset with lowest settings; supposed to be used by default when
   #   roaming.

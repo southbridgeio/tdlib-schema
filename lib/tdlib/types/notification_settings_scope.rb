@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the types of chats to which notification settings are applied.
+  # Describes the types of chats to which notification settings are relevant.
   class NotificationSettingsScope < Base
     %w[
       private_chats

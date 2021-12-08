@@ -1,6 +1,5 @@
 module TD::Types
-  # Represents a link to an animated GIF or an animated (i.e.
-  # without sound) H.264/MPEG-4 AVC video.
+  # Represents a link to an animated GIF or an animated (i.e., without sound) H.264/MPEG-4 AVC video.
   #
   # @attr id [TD::Types::String] Unique identifier of the query result.
   # @attr title [TD::Types::String] Title of the query result.
@@ -13,7 +12,7 @@ module TD::Types
   # @attr video_duration [Integer] Duration of the video, in seconds.
   # @attr video_width [Integer] Width of the video.
   # @attr video_height [Integer] Height of the video.
-  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup.
+  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup; pass null if none.
   #   Must be of type {TD::Types::ReplyMarkup::InlineKeyboard} or null.
   # @attr input_message_content [TD::Types::InputMessageContent] The content of the message to be sent.
   #   Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice,

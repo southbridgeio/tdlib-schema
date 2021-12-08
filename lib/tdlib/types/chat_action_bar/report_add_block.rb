@@ -1,6 +1,7 @@
 module TD::Types
   # The chat is a private or secret chat, which can be reported using the method reportChat, or the other user can be
-  #   blocked using the method blockUser, or the other user can be added to the contact list using the method addContact.
+  #   blocked using the method toggleMessageSenderIsBlocked, or the other user can be added to the contact list using the
+  #   method addContact.
   #
   # @attr can_unarchive [Boolean] If true, the chat was automatically archived and can be moved back to the main chat
   #   list using addChatToList simultaneously with setting chat notification settings to default using

@@ -11,9 +11,9 @@ module TD::Types
   #   downloaded_prefix_size is calculated from this offset.
   # @attr downloaded_prefix_size [Integer] If is_downloading_completed is false, then only some prefix of the file
   #   starting from download_offset is ready to be read.
-  #   downloaded_prefix_size is the size of that prefix.
-  # @attr downloaded_size [Integer] Total downloaded file bytes.
-  #   Should be used only for calculating download progress.
+  #   downloaded_prefix_size is the size of that prefix in bytes.
+  # @attr downloaded_size [Integer] Total downloaded file size, in bytes.
+  #   Can be used only for calculating download progress.
   #   The actual file size may be bigger, and some parts of it may contain garbage.
   class LocalFile < Base
     attribute :path, TD::Types::String.optional.default(nil)
