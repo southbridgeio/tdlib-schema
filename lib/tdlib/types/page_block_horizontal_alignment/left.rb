@@ -1,5 +1,5 @@
 module TD::Types
-  # The content should be left-aligned.
+  # The content must be left-aligned.
   class PageBlockHorizontalAlignment::Left < PageBlockHorizontalAlignment
   end
 end

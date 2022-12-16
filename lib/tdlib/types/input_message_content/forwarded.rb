@@ -3,10 +3,10 @@ module TD::Types
   #
   # @attr from_chat_id [Integer] Identifier for the chat this forwarded message came from.
   # @attr message_id [Integer] Identifier of the message to forward.
-  # @attr in_game_share [Boolean] True, if a game message should be shared within a launched game; applies only to game
+  # @attr in_game_share [Boolean] True, if a game message is being shared from a launched game; applies only to game
   #   messages.
-  # @attr copy_options [TD::Types::MessageCopyOptions] Options to be used to copy content of the message without a link
-  #   to the original message.
+  # @attr copy_options [TD::Types::MessageCopyOptions] Options to be used to copy content of the message without
+  #   reference to the original sender; pass null to try to forward the message as usual.
   class InputMessageContent::Forwarded < InputMessageContent
     attribute :from_chat_id, TD::Types::Coercible::Integer
     attribute :message_id, TD::Types::Coercible::Integer

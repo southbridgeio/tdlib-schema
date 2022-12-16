@@ -2,7 +2,7 @@ module TD::Types
   # Contains the storage usage statistics for a specific chat.
   #
   # @attr chat_id [Integer] Chat identifier; 0 if none.
-  # @attr size [Integer] Total size of the files in the chat.
+  # @attr size [Integer] Total size of the files in the chat, in bytes.
   # @attr count [Integer] Total number of files in the chat.
   # @attr by_file_type [Array<TD::Types::StorageStatisticsByFileType>] Statistics split by file types.
   class StorageStatisticsByChat < Base

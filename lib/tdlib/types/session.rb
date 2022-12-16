@@ -1,6 +1,6 @@
 module TD::Types
   # Contains information about one session in a Telegram application used by the current user.
-  # Sessions should be shown to the user in the returned order.
+  # Sessions must be shown to the user in the returned order.
   #
   # @attr id [Integer] Session identifier.
   # @attr is_current [Boolean] True, if this session is the current session.

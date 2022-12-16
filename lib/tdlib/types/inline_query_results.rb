@@ -6,8 +6,8 @@ module TD::Types
   # @attr next_offset [TD::Types::String] The offset for the next request.
   #   If empty, there are no more results.
   # @attr results [Array<TD::Types::InlineQueryResult>] Results of the query.
-  # @attr switch_pm_text [TD::Types::String] If non-empty, this text should be shown on the button, which opens a
-  #   private chat with the bot and sends the bot a start message with the switch_pm_parameter.
+  # @attr switch_pm_text [TD::Types::String] If non-empty, this text must be shown on the button, which opens a private
+  #   chat with the bot and sends the bot a start message with the switch_pm_parameter.
   # @attr switch_pm_parameter [TD::Types::String] Parameter for the bot start message.
   class InlineQueryResults < Base
     attribute :inline_query_id, TD::Types::Coercible::Integer

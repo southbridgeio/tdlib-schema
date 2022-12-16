@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the way the text should be parsed for TextEntities.
+  # Describes the way the text needs to be parsed for TextEntities.
   class TextParseMode < Base
     %w[
       markdown

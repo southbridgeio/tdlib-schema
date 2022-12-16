@@ -20,7 +20,7 @@ module TD::Types
   #   discussion group for a channel.
   # @attr has_location [Boolean] True, if the supergroup is connected to a location, i.e.
   #   the supergroup is a location-based supergroup.
-  # @attr sign_messages [Boolean] True, if messages sent to the channel should contain information about the sender.
+  # @attr sign_messages [Boolean] True, if messages sent to the channel need to contain information about the sender.
   #   This field is only applicable to channels.
   # @attr is_slow_mode_enabled [Boolean] True, if the slow mode is enabled in the supergroup.
   # @attr is_channel [Boolean] True, if the supergroup is a channel.

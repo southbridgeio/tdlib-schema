@@ -1,19 +1,19 @@
 module TD::Types
   # Represents a set of filters used to obtain a chat event log.
   #
-  # @attr message_edits [Boolean] True, if message edits should be returned.
-  # @attr message_deletions [Boolean] True, if message deletions should be returned.
-  # @attr message_pins [Boolean] True, if pin/unpin events should be returned.
-  # @attr member_joins [Boolean] True, if members joining events should be returned.
-  # @attr member_leaves [Boolean] True, if members leaving events should be returned.
-  # @attr member_invites [Boolean] True, if invited member events should be returned.
-  # @attr member_promotions [Boolean] True, if member promotion/demotion events should be returned.
-  # @attr member_restrictions [Boolean] True, if member restricted/unrestricted/banned/unbanned events should be
+  # @attr message_edits [Boolean] True, if message edits need to be returned.
+  # @attr message_deletions [Boolean] True, if message deletions need to be returned.
+  # @attr message_pins [Boolean] True, if pin/unpin events need to be returned.
+  # @attr member_joins [Boolean] True, if members joining events need to be returned.
+  # @attr member_leaves [Boolean] True, if members leaving events need to be returned.
+  # @attr member_invites [Boolean] True, if invited member events need to be returned.
+  # @attr member_promotions [Boolean] True, if member promotion/demotion events need to be returned.
+  # @attr member_restrictions [Boolean] True, if member restricted/unrestricted/banned/unbanned events need to be
   #   returned.
-  # @attr info_changes [Boolean] True, if changes in chat information should be returned.
-  # @attr setting_changes [Boolean] True, if changes in chat settings should be returned.
-  # @attr invite_link_changes [Boolean] True, if changes to invite links should be returned.
-  # @attr voice_chat_changes [Boolean] True, if voice chat actions should be returned.
+  # @attr info_changes [Boolean] True, if changes in chat information need to be returned.
+  # @attr setting_changes [Boolean] True, if changes in chat settings need to be returned.
+  # @attr invite_link_changes [Boolean] True, if changes to invite links need to be returned.
+  # @attr video_chat_changes [Boolean] True, if video chat actions need to be returned.
   class ChatEventLogFilters < Base
     attribute :message_edits, TD::Types::Bool
     attribute :message_deletions, TD::Types::Bool
@@ -26,6 +26,6 @@ module TD::Types
     attribute :info_changes, TD::Types::Bool
     attribute :setting_changes, TD::Types::Bool
     attribute :invite_link_changes, TD::Types::Bool
-    attribute :voice_chat_changes, TD::Types::Bool
+    attribute :video_chat_changes, TD::Types::Bool
   end
 end

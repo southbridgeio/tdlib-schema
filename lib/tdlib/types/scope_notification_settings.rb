@@ -4,7 +4,7 @@ module TD::Types
   # @attr mute_for [Integer] Time left before notifications will be unmuted, in seconds.
   # @attr sound [TD::Types::String] The name of an audio file to be used for notification sounds; only applies to iOS
   #   applications.
-  # @attr show_preview [Boolean] True, if message content should be displayed in notifications.
+  # @attr show_preview [Boolean] True, if message content must be displayed in notifications.
   # @attr disable_pinned_message_notifications [Boolean] True, if notifications for incoming pinned messages will be
   #   created as for an ordinary unread message.
   # @attr disable_mention_notifications [Boolean] True, if notifications for messages with mentions will be created as

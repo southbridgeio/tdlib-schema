@@ -6,11 +6,10 @@ module TD::Types
   # @attr url [TD::Types::String] Payment form URL.
   # @attr seller_bot_user_id [Integer] User identifier of the seller bot.
   # @attr payments_provider_user_id [Integer] User identifier of the payment provider bot.
-  # @attr payments_provider [TD::Types::PaymentsProviderStripe, nil] Contains information about the payment provider,
-  #   if available, to support it natively without the need for opening the URL; may be null.
+  # @attr payments_provider [TD::Types::PaymentsProviderStripe, nil] Information about the payment provider, if
+  #   available, to support it natively without the need for opening the URL; may be null.
   # @attr saved_order_info [TD::Types::OrderInfo, nil] Saved server-side order information; may be null.
-  # @attr saved_credentials [TD::Types::SavedCredentials, nil] Contains information about saved card credentials; may
-  #   be null.
+  # @attr saved_credentials [TD::Types::SavedCredentials, nil] Information about saved card credentials; may be null.
   # @attr can_save_credentials [Boolean] True, if the user can choose to save credentials.
   # @attr need_password [Boolean] True, if the user will be able to save credentials protected by a password they set
   #   up.

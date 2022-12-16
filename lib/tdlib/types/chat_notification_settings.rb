@@ -10,7 +10,7 @@ module TD::Types
   #   applications.
   # @attr use_default_show_preview [Boolean] If true, show_preview is ignored and the value for the relevant type of
   #   chat is used instead.
-  # @attr show_preview [Boolean] True, if message content should be displayed in notifications.
+  # @attr show_preview [Boolean] True, if message content must be displayed in notifications.
   # @attr use_default_disable_pinned_message_notifications [Boolean] If true, disable_pinned_message_notifications is
   #   ignored and the value for the relevant type of chat is used instead.
   # @attr disable_pinned_message_notifications [Boolean] If true, notifications for incoming pinned messages will be

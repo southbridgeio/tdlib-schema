@@ -4,6 +4,7 @@ module TD::Types
     %w[
       solid
       gradient
+      freeform_gradient
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/background_fill/#{type}"
     end

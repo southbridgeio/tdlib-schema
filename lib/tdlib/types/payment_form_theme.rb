@@ -5,7 +5,7 @@ module TD::Types
   # @attr text_color [Integer] A color of text in the RGB24 format.
   # @attr hint_color [Integer] A color of hints in the RGB24 format.
   # @attr link_color [Integer] A color of links in the RGB24 format.
-  # @attr button_color [Integer] A color of thebuttons in the RGB24 format.
+  # @attr button_color [Integer] A color of the buttons in the RGB24 format.
   # @attr button_text_color [Integer] A color of text on the buttons in the RGB24 format.
   class PaymentFormTheme < Base
     attribute :background_color, TD::Types::Coercible::Integer

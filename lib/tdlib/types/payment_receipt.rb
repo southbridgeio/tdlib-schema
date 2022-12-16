@@ -7,7 +7,7 @@ module TD::Types
   # @attr date [Integer] Point in time (Unix timestamp) when the payment was made.
   # @attr seller_bot_user_id [Integer] User identifier of the seller bot.
   # @attr payments_provider_user_id [Integer] User identifier of the payment provider bot.
-  # @attr invoice [TD::Types::Invoice] Contains information about the invoice.
+  # @attr invoice [TD::Types::Invoice] Information about the invoice.
   # @attr order_info [TD::Types::OrderInfo, nil] Order information; may be null.
   # @attr shipping_option [TD::Types::ShippingOption, nil] Chosen shipping option; may be null.
   # @attr credentials_title [TD::Types::String] Title of the saved credentials chosen by the buyer.

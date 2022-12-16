@@ -2,10 +2,10 @@ module TD::Types
   # Represents a cell of a table.
   #
   # @attr text [TD::Types::RichText, nil] Cell text; may be null.
-  #   If the text is null, then the cell should be invisible.
+  #   If the text is null, then the cell must be invisible.
   # @attr is_header [Boolean] True, if it is a header cell.
-  # @attr colspan [Integer] The number of columns the cell should span.
-  # @attr rowspan [Integer] The number of rows the cell should span.
+  # @attr colspan [Integer] The number of columns the cell spans.
+  # @attr rowspan [Integer] The number of rows the cell spans.
   # @attr align [TD::Types::PageBlockHorizontalAlignment] Horizontal cell content alignment.
   # @attr valign [TD::Types::PageBlockVerticalAlignment] Vertical cell content alignment.
   class PageBlockTableCell < Base

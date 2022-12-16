@@ -6,7 +6,7 @@ module TD::Types
   # @attr chat_id [Integer] Identifier of a chat to which all notifications in the group belong.
   # @attr notification_settings_chat_id [Integer] Chat identifier, which notification settings must be applied to the
   #   added notifications.
-  # @attr is_silent [Boolean] True, if the notifications should be shown without sound.
+  # @attr is_silent [Boolean] True, if the notifications must be shown without sound.
   # @attr total_count [Integer] Total number of unread notifications in the group, can be bigger than number of active
   #   notifications.
   # @attr added_notifications [Array<TD::Types::Notification>] List of added group notifications, sorted by

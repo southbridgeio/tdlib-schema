@@ -23,7 +23,7 @@ module TD::Types
       chat_is_marked_as_unread
       chat_is_blocked
       chat_has_scheduled_messages
-      chat_voice_chat
+      chat_video_chat
       chat_default_disable_notification
       chat_read_inbox
       chat_read_outbox
@@ -32,6 +32,8 @@ module TD::Types
       scope_notification_settings
       chat_message_ttl_setting
       chat_action_bar
+      chat_theme
+      chat_pending_join_requests
       chat_reply_markup
       chat_draft_message
       chat_filters
@@ -69,11 +71,13 @@ module TD::Types
       favorite_stickers
       saved_animations
       selected_background
+      chat_themes
       language_pack_strings
       connection_state
       terms_of_service
       users_nearby
       dice_emojis
+      animated_emoji_message_clicked
       animation_search_parameters
       suggested_actions
       new_inline_query
@@ -87,6 +91,7 @@ module TD::Types
       poll
       poll_answer
       chat_member
+      new_chat_join_request
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/update/#{type}"
     end

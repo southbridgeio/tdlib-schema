@@ -7,11 +7,14 @@ module TD::Types
   # @attr is_rtl [Boolean] True, if the instant view must be shown from right to left.
   # @attr is_full [Boolean] True, if the instant view contains the full page.
   #   A network request might be needed to get the full web page instant view.
+  # @attr feedback_link [TD::Types::InternalLinkType] An internal link to be opened to leave feedback about the instant
+  #   view.
   class WebPageInstantView < Base
     attribute :page_blocks, TD::Types::Array.of(TD::Types::PageBlock)
     attribute :view_count, TD::Types::Coercible::Integer
     attribute :version, TD::Types::Coercible::Integer
     attribute :is_rtl, TD::Types::Bool
     attribute :is_full, TD::Types::Bool
+    attribute :feedback_link, TD::Types::InternalLinkType
   end
 end
