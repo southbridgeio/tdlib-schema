@@ -3,8 +3,8 @@ module TD::Types
   #
   # @attr video [TD::Types::Video, nil] Video file; may be null.
   # @attr caption [TD::Types::PageBlockCaption] Video caption.
-  # @attr need_autoplay [Boolean] True, if the video should be played automatically.
-  # @attr is_looped [Boolean] True, if the video should be looped.
+  # @attr need_autoplay [Boolean] True, if the video must be played automatically.
+  # @attr is_looped [Boolean] True, if the video must be looped.
   class PageBlock::Video < PageBlock
     attribute :video, TD::Types::Video.optional.default(nil)
     attribute :caption, TD::Types::PageBlockCaption

@@ -8,7 +8,8 @@ module TD::Types
   # @attr is_inline [Boolean] True, if the bot supports inline queries.
   # @attr inline_query_placeholder [TD::Types::String] Placeholder for inline queries (displayed on the application
   #   input field).
-  # @attr need_location [Boolean] True, if the location of the user should be sent with every inline query to this bot.
+  # @attr need_location [Boolean] True, if the location of the user is expected to be sent with every inline query to
+  #   this bot.
   class UserType::Bot < UserType
     attribute :can_join_groups, TD::Types::Bool
     attribute :can_read_all_group_messages, TD::Types::Bool

@@ -7,7 +7,7 @@ module TD::Types
   # @attr emoji [TD::Types::String] Emoji corresponding to the sticker.
   # @attr is_animated [Boolean] True, if the sticker is an animated sticker in TGS format.
   # @attr is_mask [Boolean] True, if the sticker is a mask.
-  # @attr mask_position [TD::Types::MaskPosition, nil] Position where the mask should be placed; may be null.
+  # @attr mask_position [TD::Types::MaskPosition, nil] Position where the mask is placed; may be null.
   # @attr outline [Array<TD::Types::ClosedVectorPath>, nil] Sticker's outline represented as a list of closed vector
   #   paths; may be empty.
   #   The coordinate system origin is in the upper-left corner.

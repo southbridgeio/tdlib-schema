@@ -2,8 +2,8 @@ module TD::Types
   # A message with a location.
   #
   # @attr location [TD::Types::Location] Location to be sent.
-  # @attr live_period [Integer] Period for which the location can be updated, in seconds; should be between 60 and
-  #   86400 for a live location and 0 otherwise.
+  # @attr live_period [Integer] Period for which the location can be updated, in seconds; must be between 60 and 86400
+  #   for a live location and 0 otherwise.
   # @attr heading [Integer] For live locations, a direction in which the location moves, in degrees; 1-360.
   #   Pass 0 if unknown.
   # @attr proximity_alert_radius [Integer] For live locations, a maximum distance to another chat member for proximity

@@ -3,7 +3,7 @@ module TD::Types
   #
   # @attr id [TD::Types::String] Unique language pack identifier.
   # @attr base_language_pack_id [TD::Types::String, nil] Identifier of a base language pack; may be empty.
-  #   If a string is missed in the language pack, then it should be fetched from base language pack.
+  #   If a string is missed in the language pack, then it must be fetched from base language pack.
   #   Unsupported in custom language packs.
   # @attr name [TD::Types::String] Language name.
   # @attr native_name [TD::Types::String] Name of the language in that language.

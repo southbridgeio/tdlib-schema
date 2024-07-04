@@ -3,8 +3,8 @@ module TD::Types
   #
   # @attr view_count [Integer] Number of times the message was viewed.
   # @attr forward_count [Integer] Number of times the message was forwarded.
-  # @attr reply_info [TD::Types::MessageReplyInfo, nil] Contains information about direct or indirect replies to the
-  #   message; may be null.
+  # @attr reply_info [TD::Types::MessageReplyInfo, nil] Information about direct or indirect replies to the message;
+  #   may be null.
   #   Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which
   #   are not replies itself.
   class MessageInteractionInfo < Base

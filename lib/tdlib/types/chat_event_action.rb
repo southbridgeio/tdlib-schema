@@ -9,6 +9,7 @@ module TD::Types
       message_unpinned
       member_joined
       member_joined_by_invite_link
+      member_joined_by_request
       member_left
       member_invited
       member_promoted
@@ -29,11 +30,11 @@ module TD::Types
       invite_link_edited
       invite_link_revoked
       invite_link_deleted
-      voice_chat_created
-      voice_chat_discarded
-      voice_chat_participant_is_muted_toggled
-      voice_chat_participant_volume_level_changed
-      voice_chat_mute_new_participants_toggled
+      video_chat_created
+      video_chat_discarded
+      video_chat_participant_is_muted_toggled
+      video_chat_participant_volume_level_changed
+      video_chat_mute_new_participants_toggled
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/chat_event_action/#{type}"
     end
