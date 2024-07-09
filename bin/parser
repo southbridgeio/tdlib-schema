@@ -1,4 +1,12 @@
 #!/usr/bin/env ruby
+
+# Possible errors:
+#   bin/parser:395:in `sort_by': comparison of NilClass with String failed (ArgumentError)
+# Solution:
+# Fix td_api.tl. In this case there is a extra line
+# "//-pass an empty string to abort verification and receive error VERIFICATION_FAILED for the request"
+# just move it to the previous line on td_api.tl
+
 require 'active_support/all'
 
 AUTOLOAD_BASE_DIR  = 'tdlib/types'
@@ -40,10 +48,10 @@ def parse_argument_description(argument, description)
   end
 
   {
-      argument => {
-          description: description,
-          optional:    optional
-      }
+    argument => {
+      description: description,
+      optional:    optional
+    }
   }
 end
 
@@ -186,10 +194,10 @@ end
 
 def type_to_comment_type(type)
   type.gsub('TD::Types::Array.of(', 'Array<').gsub(')', '>').
-      gsub('TD::Types::Coercible::Integer', 'Integer').
-      gsub('TD::Types::Coercible::Float',   'Float').
-      gsub('TD::Types::Coercible::String',  'String').
-      gsub('TD::Types::Bool',    'Boolean')
+    gsub('TD::Types::Coercible::Integer', 'Integer').
+    gsub('TD::Types::Coercible::Float',   'Float').
+    gsub('TD::Types::Coercible::String',  'String').
+    gsub('TD::Types::Bool',    'Boolean')
 end
 
 # Generates YARD documentation comment for each param
@@ -250,7 +258,7 @@ File.write 'lib/tdlib/types/base.rb', klass
 puts "Parsing #{TD_API_TL_LOCATION}"
 
 # Reading the TL file and splitting it into classes and functions
-@classes, @functions = open(TD_API_TL_LOCATION).read.split("\n\n---functions---\n\n")
+@classes, @functions = File.read(TD_API_TL_LOCATION).split("\n\n---functions---\n\n")
 
 # First entry in td_api.tl is typecasting, it's worthless for us.
 # Last entry before functions is a testing class, once again worthless
@@ -294,7 +302,7 @@ puts "Converting classes into Ruby types"
     class_name = "#{super_class_name}::#{class_name.sub(super_class_name, '')} < #{super_class_name}"
 
     puts "MKDIR 'lib/tdlib/types/#{super_class_name.underscore}'"
-     FileUtils.mkdir_p "lib/tdlib/types/#{super_class_name.underscore}"
+    FileUtils.mkdir_p "lib/tdlib/types/#{super_class_name.underscore}"
   end
 
   if attributes.blank?
