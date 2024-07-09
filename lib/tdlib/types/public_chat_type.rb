@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes a type of public chats.
+  # Describes type of public chat.
   class PublicChatType < Base
     %w[
       has_username

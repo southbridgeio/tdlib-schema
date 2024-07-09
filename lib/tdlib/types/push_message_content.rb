@@ -12,10 +12,14 @@ module TD::Types
       game_score
       invoice
       location
+      paid_media
       photo
       poll
+      premium_gift_code
+      premium_giveaway
       screenshot_taken
       sticker
+      story
       text
       video
       video_note
@@ -24,8 +28,13 @@ module TD::Types
       chat_add_members
       chat_change_photo
       chat_change_title
+      chat_set_background
+      chat_set_theme
       chat_delete_member
       chat_join_by_link
+      chat_join_by_request
+      recurring_payment
+      suggest_profile_photo
       message_forwards
       media_album
     ].each do |type|

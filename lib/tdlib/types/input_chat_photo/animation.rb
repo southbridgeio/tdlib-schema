@@ -1,5 +1,5 @@
 module TD::Types
-  # An animation in MPEG4 format; must be square, at most 10 seconds long, have width between 160 and 800 and be at
+  # An animation in MPEG4 format; must be square, at most 10 seconds long, have width between 160 and 1280 and be at
   #   most 2MB in size.
   #
   # @attr animation [TD::Types::InputFile] Animation to be set as profile photo.

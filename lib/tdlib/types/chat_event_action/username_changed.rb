@@ -1,5 +1,5 @@
 module TD::Types
-  # The chat username was changed.
+  # The chat editable username was changed.
   #
   # @attr old_username [TD::Types::String] Previous chat username.
   # @attr new_username [TD::Types::String] New chat username.

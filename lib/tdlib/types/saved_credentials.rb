@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains information about saved card credentials.
+  # Contains information about saved payment credentials.
   #
   # @attr id [TD::Types::String] Unique identifier of the saved credentials.
   # @attr title [TD::Types::String] Title of the saved credentials.

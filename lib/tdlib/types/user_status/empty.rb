@@ -1,5 +1,5 @@
 module TD::Types
-  # The user status was never changed.
+  # The user's status has never been changed.
   class UserStatus::Empty < UserStatus
   end
 end

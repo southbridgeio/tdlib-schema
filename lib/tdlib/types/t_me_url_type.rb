@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the type of a URL linking to an internal Telegram entity.
+  # Describes the type of URL linking to an internal Telegram entity.
   class TMeUrlType < Base
     %w[
       user

@@ -3,7 +3,7 @@ module TD::Types
   #
   # @attr id [Integer] Unique persistent identifier of this notification.
   # @attr date [Integer] Notification date.
-  # @attr is_silent [Boolean] True, if the notification was initially silent.
+  # @attr is_silent [Boolean] True, if the notification was explicitly sent without sound.
   # @attr type [TD::Types::NotificationType] Notification type.
   class Notification < Base
     attribute :id, TD::Types::Coercible::Integer

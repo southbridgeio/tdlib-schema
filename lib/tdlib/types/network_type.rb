@@ -1,5 +1,5 @@
 module TD::Types
-  # Represents the type of a network.
+  # Represents the type of network.
   class NetworkType < Base
     %w[
       none

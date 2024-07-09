@@ -8,8 +8,8 @@ module TD::Types
   # @attr platform [TD::Types::String] Operating system the browser is running on.
   # @attr log_in_date [Integer] Point in time (Unix timestamp) when the user was logged in.
   # @attr last_active_date [Integer] Point in time (Unix timestamp) when obtained authorization was last used.
-  # @attr ip [TD::Types::String] IP address from which the user was logged in, in human-readable format.
-  # @attr location [TD::Types::String] Human-readable description of a country and a region, from which the user was
+  # @attr ip_address [TD::Types::String] IP address from which the user was logged in, in human-readable format.
+  # @attr location [TD::Types::String] Human-readable description of a country and a region from which the user was
   #   logged in, based on the IP address.
   class ConnectedWebsite < Base
     attribute :id, TD::Types::Coercible::Integer
@@ -19,7 +19,7 @@ module TD::Types
     attribute :platform, TD::Types::String
     attribute :log_in_date, TD::Types::Coercible::Integer
     attribute :last_active_date, TD::Types::Coercible::Integer
-    attribute :ip, TD::Types::String
+    attribute :ip_address, TD::Types::String
     attribute :location, TD::Types::String
   end
 end

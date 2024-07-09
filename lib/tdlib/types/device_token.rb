@@ -15,6 +15,7 @@ module TD::Types
       ubuntu_push
       black_berry_push
       tizen_push
+      huawei_push
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/device_token/#{type}"
     end

@@ -1,5 +1,5 @@
 module TD::Types
-  # The messages was exported from a private chat.
+  # The messages were exported from a private chat.
   #
   # @attr name [TD::Types::String, nil] Name of the other party; may be empty if unrecognized.
   class MessageFileType::Private < MessageFileType

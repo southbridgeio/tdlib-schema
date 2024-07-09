@@ -9,11 +9,13 @@ module TD::Types
   #   The file can be downloaded only before the photo is changed.
   # @attr minithumbnail [TD::Types::Minithumbnail, nil] User profile photo minithumbnail; may be null.
   # @attr has_animation [Boolean] True, if the photo has animated variant.
+  # @attr is_personal [Boolean] True, if the photo is visible only for the current user.
   class ProfilePhoto < Base
     attribute :id, TD::Types::Coercible::Integer
     attribute :small, TD::Types::File
     attribute :big, TD::Types::File
     attribute :minithumbnail, TD::Types::Minithumbnail.optional.default(nil)
     attribute :has_animation, TD::Types::Bool
+    attribute :is_personal, TD::Types::Bool
   end
 end

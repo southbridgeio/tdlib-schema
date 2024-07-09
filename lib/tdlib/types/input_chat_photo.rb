@@ -5,6 +5,7 @@ module TD::Types
       previous
       static
       animation
+      sticker
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/input_chat_photo/#{type}"
     end

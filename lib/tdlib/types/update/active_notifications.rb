@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains active notifications that was shown on previous application launches.
+  # Contains active notifications that were shown on previous application launches.
   # This update is sent only if the message database is used.
   # In that case it comes once before any updateNotification and updateNotificationGroup update.
   #

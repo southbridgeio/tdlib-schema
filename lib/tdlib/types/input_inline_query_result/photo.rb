@@ -8,7 +8,7 @@ module TD::Types
   # @attr photo_url [TD::Types::String] The URL of the JPEG photo (photo size must not exceed 5MB).
   # @attr photo_width [Integer] Width of the photo.
   # @attr photo_height [Integer] Height of the photo.
-  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup.
+  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup; pass null if none.
   #   Must be of type {TD::Types::ReplyMarkup::InlineKeyboard} or null.
   # @attr input_message_content [TD::Types::InputMessageContent] The content of the message to be sent.
   #   Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice,

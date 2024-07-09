@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains the type of a Telegram Passport element.
+  # Contains the type of Telegram Passport element.
   class PassportElementType < Base
     %w[
       personal_details

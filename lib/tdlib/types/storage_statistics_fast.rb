@@ -1,7 +1,7 @@
 module TD::Types
   # Contains approximate storage usage statistics, excluding files of unknown file type.
   #
-  # @attr files_size [Integer] Approximate total size of files.
+  # @attr files_size [Integer] Approximate total size of files, in bytes.
   # @attr file_count [Integer] Approximate number of files.
   # @attr database_size [Integer] Size of the database.
   # @attr language_pack_database_size [Integer] Size of the language pack database.

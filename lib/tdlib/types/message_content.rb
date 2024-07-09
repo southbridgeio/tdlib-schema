@@ -6,25 +6,30 @@ module TD::Types
       animation
       audio
       document
+      paid_media
       photo
-      expired_photo
       sticker
       video
-      expired_video
       video_note
       voice_note
+      expired_photo
+      expired_video
+      expired_video_note
+      expired_voice_note
       location
       venue
       contact
+      animated_emoji
       dice
       game
       poll
+      story
       invoice
       call
-      voice_chat_scheduled
-      voice_chat_started
-      voice_chat_ended
-      invite_voice_chat_participants
+      video_chat_scheduled
+      video_chat_started
+      video_chat_ended
+      invite_video_chat_participants
       basic_group_chat_create
       supergroup_chat_create
       chat_change_title
@@ -32,18 +37,37 @@ module TD::Types
       chat_delete_photo
       chat_add_members
       chat_join_by_link
+      chat_join_by_request
       chat_delete_member
       chat_upgrade_to
       chat_upgrade_from
       pin_message
       screenshot_taken
-      chat_set_ttl
+      chat_set_background
+      chat_set_theme
+      chat_set_message_auto_delete_time
+      chat_boost
+      forum_topic_created
+      forum_topic_edited
+      forum_topic_is_closed_toggled
+      forum_topic_is_hidden_toggled
+      suggest_profile_photo
       custom_service_action
       game_score
       payment_successful
       payment_successful_bot
+      gifted_premium
+      premium_gift_code
+      premium_giveaway_created
+      premium_giveaway
+      premium_giveaway_completed
+      premium_giveaway_winners
       contact_registered
-      website_connected
+      users_shared
+      chat_shared
+      bot_write_access_allowed
+      web_app_data_sent
+      web_app_data_received
       passport_data_sent
       passport_data_received
       proximity_alert_triggered

@@ -1,6 +1,6 @@
 module TD::Types
   # A language pack string which has different forms based on the number of some object it mentions.
-  # See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more info.
+  # See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information.
   #
   # @attr zero_value [TD::Types::String] Value for zero objects.
   # @attr one_value [TD::Types::String] Value for one object.

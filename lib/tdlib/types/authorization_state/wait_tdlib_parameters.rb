@@ -1,5 +1,6 @@
 module TD::Types
-  # TDLib needs TdlibParameters for initialization.
+  # Initialization parameters are needed.
+  # Call setTdlibParameters to provide them.
   class AuthorizationState::WaitTdlibParameters < AuthorizationState
   end
 end

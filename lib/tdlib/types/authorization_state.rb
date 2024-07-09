@@ -3,8 +3,9 @@ module TD::Types
   class AuthorizationState < Base
     %w[
       wait_tdlib_parameters
-      wait_encryption_key
       wait_phone_number
+      wait_email_address
+      wait_email_code
       wait_code
       wait_other_device_confirmation
       wait_registration

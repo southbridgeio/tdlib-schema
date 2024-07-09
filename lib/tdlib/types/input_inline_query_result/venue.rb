@@ -6,7 +6,7 @@ module TD::Types
   # @attr thumbnail_url [TD::Types::String] URL of the result thumbnail, if it exists.
   # @attr thumbnail_width [Integer] Thumbnail width, if known.
   # @attr thumbnail_height [Integer] Thumbnail height, if known.
-  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup.
+  # @attr reply_markup [TD::Types::ReplyMarkup] The message reply markup; pass null if none.
   #   Must be of type {TD::Types::ReplyMarkup::InlineKeyboard} or null.
   # @attr input_message_content [TD::Types::InputMessageContent] The content of the message to be sent.
   #   Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation,

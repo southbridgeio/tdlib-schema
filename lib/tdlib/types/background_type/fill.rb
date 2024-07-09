@@ -1,7 +1,7 @@
 module TD::Types
   # A filled background.
   #
-  # @attr fill [TD::Types::BackgroundFill] Description of the background fill.
+  # @attr fill [TD::Types::BackgroundFill] The background fill.
   class BackgroundType::Fill < BackgroundType
     attribute :fill, TD::Types::BackgroundFill
   end

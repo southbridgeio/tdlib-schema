@@ -2,7 +2,7 @@ module TD::Types
   # Contains information about a proxy server.
   #
   # @attr id [Integer] Unique identifier of the proxy.
-  # @attr server [TD::Types::String] Proxy server IP address.
+  # @attr server [TD::Types::String] Proxy server domain or IP address.
   # @attr port [Integer] Proxy server port.
   # @attr last_used_date [Integer] Point in time (Unix timestamp) when the proxy was last used; 0 if never.
   # @attr is_enabled [Boolean] True, if the proxy is enabled now.

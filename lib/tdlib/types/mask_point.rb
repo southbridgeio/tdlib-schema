@@ -1,5 +1,5 @@
 module TD::Types
-  # Part of the face, relative to which a mask should be placed.
+  # Part of the face, relative to which a mask is placed.
   class MaskPoint < Base
     %w[
       forehead

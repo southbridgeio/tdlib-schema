@@ -1,5 +1,5 @@
 module TD::Types
-  # A file defined by its unique ID.
+  # A file defined by its unique identifier.
   #
   # @attr id [Integer] Unique file identifier.
   class InputFile::Id < InputFile

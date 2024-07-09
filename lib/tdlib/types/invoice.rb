@@ -6,6 +6,12 @@ module TD::Types
   #   product.
   # @attr max_tip_amount [Integer] The maximum allowed amount of tip in the smallest units of the currency.
   # @attr suggested_tip_amounts [Array<Integer>] Suggested amounts of tip in the smallest units of the currency.
+  # @attr recurring_payment_terms_of_service_url [TD::Types::String] An HTTP URL with terms of service for recurring
+  #   payments.
+  #   If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service
+  #   before allowed to pay.
+  # @attr terms_of_service_url [TD::Types::String] An HTTP URL with terms of service for non-recurring payments.
+  #   If non-empty, then the user must accept the terms of service before allowed to pay.
   # @attr is_test [Boolean] True, if the payment is a test payment.
   # @attr need_name [Boolean] True, if the user's name is needed for payment.
   # @attr need_phone_number [Boolean] True, if the user's phone number is needed for payment.
@@ -19,6 +25,8 @@ module TD::Types
     attribute :price_parts, TD::Types::Array.of(TD::Types::LabeledPricePart)
     attribute :max_tip_amount, TD::Types::Coercible::Integer
     attribute :suggested_tip_amounts, TD::Types::Array.of(TD::Types::Coercible::Integer)
+    attribute :recurring_payment_terms_of_service_url, TD::Types::String
+    attribute :terms_of_service_url, TD::Types::String
     attribute :is_test, TD::Types::Bool
     attribute :need_name, TD::Types::Bool
     attribute :need_phone_number, TD::Types::Bool
