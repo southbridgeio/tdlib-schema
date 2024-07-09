@@ -13,35 +13,59 @@ module TD::Types
       message_interaction_info
       message_content_opened
       message_mention_read
+      message_unread_reactions
+      message_fact_check
       message_live_location_viewed
       new_chat
       chat_title
       chat_photo
+      chat_accent_colors
       chat_permissions
       chat_last_message
       chat_position
-      chat_is_marked_as_unread
-      chat_is_blocked
-      chat_has_scheduled_messages
-      chat_voice_chat
-      chat_default_disable_notification
+      chat_added_to_list
+      chat_removed_from_list
       chat_read_inbox
       chat_read_outbox
-      chat_unread_mention_count
-      chat_notification_settings
-      scope_notification_settings
-      chat_message_ttl_setting
       chat_action_bar
-      chat_reply_markup
+      chat_business_bot_manage_bar
+      chat_available_reactions
       chat_draft_message
-      chat_filters
+      chat_emoji_status
+      chat_message_sender
+      chat_message_auto_delete_time
+      chat_notification_settings
+      chat_pending_join_requests
+      chat_reply_markup
+      chat_background
+      chat_theme
+      chat_unread_mention_count
+      chat_unread_reaction_count
+      chat_video_chat
+      chat_default_disable_notification
+      chat_has_protected_content
+      chat_is_translatable
+      chat_is_marked_as_unread
+      chat_view_as_topics
+      chat_block_list
+      chat_has_scheduled_messages
+      chat_folders
       chat_online_member_count
+      saved_messages_topic
+      saved_messages_topic_count
+      quick_reply_shortcut
+      quick_reply_shortcut_deleted
+      quick_reply_shortcuts
+      quick_reply_shortcut_messages
+      forum_topic_info
+      scope_notification_settings
+      reaction_notification_settings
       notification
       notification_group
       active_notifications
       have_pending_notifications
       delete_messages
-      user_chat_action
+      chat_action
       user_status
       user
       basic_group
@@ -54,6 +78,11 @@ module TD::Types
       file
       file_generation_start
       file_generation_stop
+      file_downloads
+      file_added_to_downloads
+      file_download
+      file_removed_from_downloads
+      application_verification_required
       call
       group_call
       group_call_participant
@@ -61,6 +90,13 @@ module TD::Types
       user_privacy_setting_rules
       unread_message_count
       unread_chat_count
+      story
+      story_deleted
+      story_send_succeeded
+      story_send_failed
+      chat_active_stories
+      story_list_chat_count
+      story_stealth_mode
       option
       sticker_set
       installed_sticker_sets
@@ -68,18 +104,42 @@ module TD::Types
       recent_stickers
       favorite_stickers
       saved_animations
-      selected_background
+      saved_notification_sounds
+      default_background
+      chat_themes
+      accent_colors
+      profile_accent_colors
       language_pack_strings
       connection_state
       terms_of_service
       users_nearby
+      unconfirmed_session
+      attachment_menu_bots
+      web_app_message_sent
+      active_emoji_reactions
+      available_message_effects
+      default_reaction_type
+      saved_messages_tags
+      owned_star_count
+      chat_revenue_amount
+      star_revenue_status
+      speech_recognition_trial
       dice_emojis
+      animated_emoji_message_clicked
       animation_search_parameters
       suggested_actions
+      speed_limit_notification
+      contact_close_birthdays
+      autosave_settings
+      business_connection
+      new_business_message
+      business_message_edited
+      business_messages_deleted
       new_inline_query
       new_chosen_inline_result
       new_callback_query
       new_inline_callback_query
+      new_business_callback_query
       new_shipping_query
       new_pre_checkout_query
       new_custom_event
@@ -87,6 +147,10 @@ module TD::Types
       poll
       poll_answer
       chat_member
+      new_chat_join_request
+      chat_boost
+      message_reaction
+      message_reactions
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/update/#{type}"
     end

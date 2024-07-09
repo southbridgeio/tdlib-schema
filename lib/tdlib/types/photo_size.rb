@@ -6,7 +6,7 @@ module TD::Types
   # @attr width [Integer] Image width.
   # @attr height [Integer] Image height.
   # @attr progressive_sizes [Array<Integer>] Sizes of progressive JPEG file prefixes, which can be used to
-  #   preliminarily show the image.
+  #   preliminarily show the image; in bytes.
   class PhotoSize < Base
     attribute :type, TD::Types::String
     attribute :photo, TD::Types::File

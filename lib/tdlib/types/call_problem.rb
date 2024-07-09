@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the exact type of a problem with a call.
+  # Describes the exact type of problem with a call.
   class CallProblem < Base
     %w[
       echo

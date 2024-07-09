@@ -7,8 +7,8 @@ module TD::Types
   # @attr width [Integer] Block width; 0 if unknown.
   # @attr height [Integer] Block height; 0 if unknown.
   # @attr caption [TD::Types::PageBlockCaption] Block caption.
-  # @attr is_full_width [Boolean] True, if the block should be full width.
-  # @attr allow_scrolling [Boolean] True, if scrolling should be allowed.
+  # @attr is_full_width [Boolean] True, if the block must be full width.
+  # @attr allow_scrolling [Boolean] True, if scrolling needs to be allowed.
   class PageBlock::Embedded < PageBlock
     attribute :url, TD::Types::String.optional.default(nil)
     attribute :html, TD::Types::String

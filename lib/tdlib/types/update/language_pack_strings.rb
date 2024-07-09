@@ -3,7 +3,8 @@ module TD::Types
   #
   # @attr localization_target [TD::Types::String] Localization target to which the language pack belongs.
   # @attr language_pack_id [TD::Types::String] Identifier of the updated language pack.
-  # @attr strings [Array<TD::Types::LanguagePackString>] List of changed language pack strings.
+  # @attr strings [Array<TD::Types::LanguagePackString>] List of changed language pack strings; empty if all strings
+  #   have changed.
   class Update::LanguagePackStrings < Update
     attribute :localization_target, TD::Types::String
     attribute :language_pack_id, TD::Types::String

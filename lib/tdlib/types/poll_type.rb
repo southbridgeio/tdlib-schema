@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the type of a poll.
+  # Describes the type of poll.
   class PollType < Base
     %w[
       regular

@@ -1,5 +1,5 @@
 module TD::Types
-  # Incoming messages were read or number of unread messages has been changed.
+  # Incoming messages were read or the number of unread messages has been changed.
   #
   # @attr chat_id [Integer] Chat identifier.
   # @attr last_read_inbox_message_id [Integer] Identifier of the last read incoming message.

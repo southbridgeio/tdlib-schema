@@ -1,5 +1,5 @@
 module TD::Types
-  # Telegram Passport data has been sent.
+  # Telegram Passport data has been sent to a bot.
   #
   # @attr types [Array<TD::Types::PassportElementType>] List of Telegram Passport element types sent.
   class MessageContent::PassportDataSent < MessageContent
