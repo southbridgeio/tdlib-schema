@@ -2,7 +2,7 @@ module TD::Types
   # Describes a call.
   #
   # @attr id [Integer] Call identifier, not persistent.
-  # @attr user_id [Integer] Peer user identifier.
+  # @attr user_id [Integer] User identifier of the other call participant.
   # @attr is_outgoing [Boolean] True, if the call is outgoing.
   # @attr is_video [Boolean] True, if the call is a video call.
   # @attr state [TD::Types::CallState] Call state.

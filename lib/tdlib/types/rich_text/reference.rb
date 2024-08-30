@@ -1,5 +1,5 @@
 module TD::Types
-  # A reference to a richTexts object on the same web page.
+  # A reference to a richTexts object on the same page.
   #
   # @attr text [TD::Types::RichText] The text.
   # @attr anchor_name [TD::Types::String] The name of a {TD::Types::RichText::Anchor} object, which is the first

@@ -4,10 +4,10 @@ module TD::Types
   #
   # @attr initial_state [TD::Types::DiceStickers, nil] The animated stickers with the initial dice animation; may be
   #   null if unknown.
-  #   {TD::Types::Update::MessageContent} will be sent when the sticker became known.
+  #   The update {TD::Types::Update::MessageContent} will be sent when the sticker became known.
   # @attr final_state [TD::Types::DiceStickers, nil] The animated stickers with the final dice animation; may be null
   #   if unknown.
-  #   {TD::Types::Update::MessageContent} will be sent when the sticker became known.
+  #   The update {TD::Types::Update::MessageContent} will be sent when the sticker became known.
   # @attr emoji [TD::Types::String] Emoji on which the dice throw animation is based.
   # @attr value [Integer] The dice value.
   #   If the value is 0, the dice don't have final state yet.

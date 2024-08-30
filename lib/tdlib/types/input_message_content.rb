@@ -6,6 +6,7 @@ module TD::Types
       animation
       audio
       document
+      paid_media
       photo
       sticker
       video
@@ -18,6 +19,7 @@ module TD::Types
       game
       invoice
       poll
+      story
       forwarded
     ].each do |type|
       autoload TD::Types.camelize(type), "tdlib/types/input_message_content/#{type}"

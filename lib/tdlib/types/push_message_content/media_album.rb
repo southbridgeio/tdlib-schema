@@ -3,7 +3,7 @@ module TD::Types
   #
   # @attr total_count [Integer] Number of messages in the album.
   # @attr has_photos [Boolean] True, if the album has at least one photo.
-  # @attr has_videos [Boolean] True, if the album has at least one video.
+  # @attr has_videos [Boolean] True, if the album has at least one video file.
   # @attr has_audios [Boolean] True, if the album has at least one audio file.
   # @attr has_documents [Boolean] True, if the album has at least one document.
   class PushMessageContent::MediaAlbum < PushMessageContent

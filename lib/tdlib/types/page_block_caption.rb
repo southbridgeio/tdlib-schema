@@ -1,5 +1,5 @@
 module TD::Types
-  # Contains a caption of an instant view web page block, consisting of a text and a trailing credit.
+  # Contains a caption of another block.
   #
   # @attr text [TD::Types::RichText] Content of the caption.
   # @attr credit [TD::Types::RichText] Block credit (like HTML tag <cite>).

@@ -3,6 +3,8 @@ module TD::Types
   #
   # @attr currency [TD::Types::String] Currency for price of the product.
   # @attr total_amount [Integer] Total price for the product, in the smallest units of the currency.
+  # @attr is_recurring [Boolean] True, if this is a recurring payment.
+  # @attr is_first_recurring [Boolean] True, if this is the first recurring payment.
   # @attr invoice_payload [String] Invoice payload.
   # @attr shipping_option_id [TD::Types::String, nil] Identifier of the shipping option chosen by the user; may be
   #   empty if not applicable.
@@ -12,6 +14,8 @@ module TD::Types
   class MessageContent::PaymentSuccessfulBot < MessageContent
     attribute :currency, TD::Types::String
     attribute :total_amount, TD::Types::Coercible::Integer
+    attribute :is_recurring, TD::Types::Bool
+    attribute :is_first_recurring, TD::Types::Bool
     attribute :invoice_payload, TD::Types::Coercible::String
     attribute :shipping_option_id, TD::Types::String.optional.default(nil)
     attribute :order_info, TD::Types::OrderInfo.optional.default(nil)

@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes a block of an instant view web page.
+  # Describes a block of an instant view for a web page.
   class PageBlock < Base
     %w[
       title

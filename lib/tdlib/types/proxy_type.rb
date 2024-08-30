@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the type of a proxy server.
+  # Describes the type of proxy server.
   class ProxyType < Base
     %w[
       socks5

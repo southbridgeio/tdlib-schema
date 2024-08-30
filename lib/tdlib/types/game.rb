@@ -1,9 +1,9 @@
 module TD::Types
   # Describes a game.
+  # Use getInternalLink with internalLinkTypeGame to share the game.
   #
-  # @attr id [Integer] Game ID.
+  # @attr id [Integer] Unique game identifier.
   # @attr short_name [TD::Types::String] Game short name.
-  #   To share a game use the URL https://t.me/{bot_username}?game={game_short_name}.
   # @attr title [TD::Types::String] Game title.
   # @attr text [TD::Types::FormattedText] Game text, usually containing scoreboards for a game.
   # @attr description [TD::Types::String] Game description.

@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the type of a chat.
+  # Describes the type of chat.
   class ChatType < Base
     %w[
       private

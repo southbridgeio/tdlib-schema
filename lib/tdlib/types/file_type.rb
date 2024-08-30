@@ -1,12 +1,14 @@
 module TD::Types
-  # Represents the type of a file.
+  # Represents the type of file.
   class FileType < Base
     %w[
       none
       animation
       audio
       document
+      notification_sound
       photo
+      photo_story
       profile_photo
       secret
       secret_thumbnail
@@ -16,6 +18,7 @@ module TD::Types
       unknown
       video
       video_note
+      video_story
       voice_note
       wallpaper
     ].each do |type|

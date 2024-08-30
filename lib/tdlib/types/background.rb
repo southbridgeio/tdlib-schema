@@ -6,7 +6,7 @@ module TD::Types
   # @attr is_dark [Boolean] True, if the background is dark and is recommended to be used with dark theme.
   # @attr name [TD::Types::String] Unique background name.
   # @attr document [TD::Types::Document, nil] Document with the background; may be null.
-  #   Null only for filled backgrounds.
+  #   Null only for filled and chat theme backgrounds.
   # @attr type [TD::Types::BackgroundType] Type of the background.
   class Background < Base
     attribute :id, TD::Types::Coercible::Integer
