@@ -1,5 +1,5 @@
 module TD::Types
-  # Some data from userFullInfo has been changed.
+  # Some data in userFullInfo has been changed.
   #
   # @attr user_id [Integer] User identifier.
   # @attr user_full_info [TD::Types::UserFullInfo] New full information about the user.

@@ -8,7 +8,7 @@ module TD::Types
   # @attr mime_type [TD::Types::String] MIME type of the file; as defined by the sender.
   # @attr has_stickers [Boolean] True, if stickers were added to the video.
   #   The list of corresponding sticker sets can be received using getAttachedStickerSets.
-  # @attr supports_streaming [Boolean] True, if the video should be tried to be streamed.
+  # @attr supports_streaming [Boolean] True, if the video is supposed to be streamed.
   # @attr minithumbnail [TD::Types::Minithumbnail, nil] Video minithumbnail; may be null.
   # @attr thumbnail [TD::Types::Thumbnail, nil] Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may
   #   be null.

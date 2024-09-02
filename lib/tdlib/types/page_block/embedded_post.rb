@@ -1,7 +1,7 @@
 module TD::Types
   # An embedded post.
   #
-  # @attr url [TD::Types::String] Web page URL.
+  # @attr url [TD::Types::String] URL of the embedded post.
   # @attr author [TD::Types::String] Post author.
   # @attr author_photo [TD::Types::Photo, nil] Post author photo; may be null.
   # @attr date [Integer] Point in time (Unix timestamp) when the post was created; 0 if unknown.

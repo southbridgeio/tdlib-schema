@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes a text object inside an instant-view web page.
+  # Describes a formatted text object.
   class RichText < Base
     %w[
       plain

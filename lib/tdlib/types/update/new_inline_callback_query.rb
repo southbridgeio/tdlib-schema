@@ -3,7 +3,7 @@ module TD::Types
   #
   # @attr id [Integer] Unique query identifier.
   # @attr sender_user_id [Integer] Identifier of the user who sent the query.
-  # @attr inline_message_id [TD::Types::String] Identifier of the inline message, from which the query originated.
+  # @attr inline_message_id [TD::Types::String] Identifier of the inline message from which the query originated.
   # @attr chat_instance [Integer] An identifier uniquely corresponding to the chat a message was sent to.
   # @attr payload [TD::Types::CallbackQueryPayload] Query payload.
   class Update::NewInlineCallbackQuery < Update

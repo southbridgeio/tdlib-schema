@@ -1,5 +1,5 @@
 module TD::Types
-  # Describes the type of a call server.
+  # Describes the type of call server.
   class CallServerType < Base
     %w[
       telegram_reflector

@@ -1,5 +1,5 @@
 module TD::Types
-  # The chat permissions was changed.
+  # The chat permissions were changed.
   #
   # @attr old_permissions [TD::Types::ChatPermissions] Previous chat permissions.
   # @attr new_permissions [TD::Types::ChatPermissions] New chat permissions.

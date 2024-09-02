@@ -1,5 +1,5 @@
 module TD::Types
-  # Represents the type of a user.
+  # Represents the type of user.
   # The following types are possible: regular users, deleted users and bots.
   class UserType < Base
     %w[

@@ -7,6 +7,7 @@ module TD::Types
       groups
       channels
       inline_bots
+      web_app_bots
       calls
       forward_chats
     ].each do |type|
